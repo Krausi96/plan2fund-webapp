@@ -9,6 +9,11 @@ import PlanPage from "./pages/PlanPage";
 import ResultsPage from "./pages/Results";
 import CheckoutPage from "./pages/Checkout";
 import AfterSales from "./pages/AfterSales";
+import "../design/theme.css";
+import "../design/motion.css";
+import "./lib/header.mount.js";
+import "./lib/celebrate.js";
+
 
 export default function App(){
   const [step, setStep] = useState("landing");
