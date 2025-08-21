@@ -1,19 +1,25 @@
 {
+  "header": {
+    "personal": "Privat",
+    "orgs": "Organisationen",
+    "build": "Baue deine Freiheit",
+    "lang": "Sprache"
+  },
   "hero": {
     "eyebrow": "Einreichfertige Pläne",
     "title": "Freiheit beginnt mit einem klaren Plan — bauen wir deinen."
   },
   "value": {
-    "line1": "Ob Idee, Förderung oder Visum — wir machen aus Gedanken, Entwürfen oder bestehendem Geschäft einen einreichfertigen Businessplan.",
-    "line2": "Ausgerichtet auf Standards von Institutionen, Banken & öffentlichen Programmen national & international."
+    "line1": "Ob Idee, Förderung oder Visum — wir machen aus Gedanken, Entwürfen oder bestehendem Geschäft einen einreich- & förderfähigen Businessplan.",
+    "line2": "Ausgerichtet auf Standards von Institutionen, Banken & öffentlichen Programmen, national & international."
   },
   "usecases": {
     "title": "Anwendungsfälle",
     "items": [
-      "Visaanträge (z. B. RWR, Freiberuflerbewilligung)",
-      "Förderungen & öffentliche Mittel (AWS PreSeed, FFG Basisprogramm, EU‑Calls)",
-      "Bankkredite oder Leasing — formatiert für Finanzstandards",
-      "Startups, Coaching oder Projekte — AMS, WKO oder Beratungsfälle"
+      "Visaanträge – z. B. RWR, Freiberufler",
+      "Förderungen – z. B. AWS PreSeed, FFG Basisprogramm, EU‑Calls",
+      "Bankkredit oder Leasing – strukturiert für Finanzstandards",
+      "Startup, Coaching oder Projekte – AMS, WKO oder mit Berater:innen"
     ]
   },
   "offers": {
@@ -21,29 +27,29 @@
     "items": [
       {
         "title": "Individueller Businessplan (15–35 Seiten)",
-        "desc": "Vollständiger Plan aus deinem Geschäftsmodell — abgestimmt auf institutionelle & Förder‑Anforderungen.",
-        "ideal": "Ideal für Visum, Förderung oder Kredit/Leasing bei klarem Modell."
+        "desc": "Du hast dein Geschäftsmodell definiert — wir liefern den einreichfertigen Plan nach Anforderungen von Institutionen & Förderstellen.",
+        "ideal": "Ideal für: Visum, Förderung oder Kredit/Leasing bei klarem Modell."
       },
       {
         "title": "Upgrade & Review",
-        "desc": "Wir überarbeiten deinen Entwurf — inkl. Formatierung, Umtexten und Experten‑Edits für AWS, FFG, Banken oder Visa.",
-        "ideal": "Ideal für Entwürfe mit Struktur‑/Formatierungsbedarf."
+        "desc": "Du hast einen Entwurf? Wir überarbeiten, strukturieren und formatieren — inkl. Experten‑Edits für AWS, FFG, Banken oder Visa.",
+        "ideal": "Ideal für: Pläne mit Lücken, Struktur‑ oder Formatbedarf."
       },
       {
         "title": "Strategie‑ & Modellierungsplan (4–8 Seiten)",
-        "desc": "Wir schärfen Modell & Strategie — ideal für frühe Ideen oder Pivots.",
-        "ideal": "Kombinierbar mit Businessplan oder Upgrade & Review."
+        "desc": "Du hast eine Idee, Details fehlen. Wir schärfen Modell & Strategie.",
+        "ideal": "Ideal für: Frühphase, Pivots oder Beratungsfälle."
       }
     ]
   },
   "included": {
     "title": "Enthalten",
     "items": [
-      "Strukturierter, einreichfertiger Businessplan oder Vorlage",
-      "Editierbar als Google Doc oder Word (PDF optional)",
+      "Strukturierter, einreichfertiger Plan oder Dokument",
+      "Lieferung als Google Doc oder Word (PDF optional)",
       "1‑seitige Executive Summary",
-      "Optional: NDA (Vertraulichkeit)",
-      "1 kostenlose Korrektur kleiner Anpassungen",
+      "Optional: Vertraulichkeitsvereinbarung (NDA)",
+      "1 kostenlose Revision kleiner Anpassungen",
       "Asynchron standardmäßig; Support möglich"
     ]
   },
@@ -52,21 +58,46 @@
     "cards": [
       {
         "title": "Förderung finden",
-        "desc": "Recommendation‑Engine mit Top‑5 Programmen und Begründungen.",
+        "desc": "Recommendation‑Engine mit Begründungen.",
         "cta": "Zu Förderung",
         "href": "/reco"
       },
       {
-        "title": "Plan erstellen",
-        "desc": "Business‑Plan Generator/Editor mit institutionellen Overlays.",
+        "title": "Plan erstellen / upgraden",
+        "desc": "Editor mit Overlays je Institution/Programm.",
         "cta": "Plan starten",
         "href": "/plan"
       },
       {
-        "title": "Upgrade & Review",
-        "desc": "Entwurf hochladen; wir fixen Struktur & Formatierung.",
-        "cta": "Entwurf upgraden",
-        "href": "/plan?mode=review"
+        "title": "Strategie & Modellierung",
+        "desc": "Geführte Modellierung für Ideenphase.",
+        "cta": "Strategie starten",
+        "href": "/plan?mode=strategy"
+      }
+    ]
+  },
+  "personas": {
+    "title": "Wer bist du?",
+    "items": [
+      {
+        "id": "frustrated",
+        "title": "Frustriert",
+        "desc": "Minimaler Input. Upload, wir füllen Defaults."
+      },
+      {
+        "id": "newbie",
+        "title": "Einsteiger:in",
+        "desc": "Einfache Fragen, Schritt für Schritt."
+      },
+      {
+        "id": "expert",
+        "title": "Expert:in",
+        "desc": "Genaues Programm. Präzises Overlay."
+      },
+      {
+        "id": "idea",
+        "title": "Ideenphase",
+        "desc": "Kein Programm. Volle Modellierung."
       }
     ]
   },
@@ -75,11 +106,10 @@
     "cta": "Jetzt starten"
   },
   "footer": {
-    "pricing": "Preise",
-    "examples": "Beispiele",
-    "gdpr": "Datenschutz",
+    "contact": "Kontakt",
     "terms": "AGB",
-    "impressum": "Impressum",
-    "contact": "Kontakt"
+    "privacy": "Datenschutz",
+    "legal": "Impressum",
+    "copy": "©2025 Plan2Fund. Alle Rechte vorbehalten."
   }
 }

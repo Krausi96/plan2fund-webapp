@@ -1,9 +1,9 @@
-# COMPLIANCE (EU/Austria) — v2
 
-- No trackers by default; analytics gated behind CONSENT_GRANTED=false.
-- Cookie banner only if non‑essential cookies are enabled.
+# COMPLIANCE (EU/Austria) — User Journey Edition
+
+- No trackers by default; consent required for non‑essential cookies.
 - Data minimization: only inputs needed to generate plans.
-- LocalStorage: language preference only (no PII).
-- Legal pages shipped as static public routes: /gdpr.html, /terms.html, /impressum.html, /contact.html, /pricing.html.
-- Pricing shows currency (EUR) and VAT notice. Impressum placeholder included.
-- Accessibility: AA contrast; motion respects prefers-reduced-motion.
+- LocalStorage: language preference and persona only (non‑PII).
+- Legal pages: /gdpr.html, /terms.html, /impressum.html, /contact.html
+- Pricing shown in EUR with VAT notice on invoice.
+- Accessibility: WCAG AA contrast; respects `prefers-reduced-motion`.

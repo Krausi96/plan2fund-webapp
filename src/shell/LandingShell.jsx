@@ -1,1 +1,28 @@
-import React from "react";import Hero from "../components/Hero.jsx";import Offers from "../components/Offers.jsx";import UseCases from "../components/UseCases.jsx";import Included from "../components/Included.jsx";import Steps from "../components/Steps.jsx";import ChoosePath from "../components/ChoosePath.jsx";import CTABand from "../components/CTABand.jsx";import Footer from "../components/Footer.jsx";export default function LandingShell(){const route="/";return(<div data-route={route} className="hidden-on-landing"><Hero/><Offers/><UseCases/><Included/><Steps/><ChoosePath/><CTABand/><Footer/></div>);}
+
+import React from "react";
+import Hero from "../components/Hero.jsx";
+import Offers from "../components/Offers.jsx";
+import UseCases from "../components/UseCases.jsx";
+import Included from "../components/Included.jsx";
+import PersonaBar from "../components/PersonaBar.jsx";
+import Steps from "../components/Steps.jsx";
+import ChoosePath from "../components/ChoosePath.jsx";
+import CTABand from "../components/CTABand.jsx";
+import Footer from "../components/Footer.jsx";
+
+export default function LandingShell(){
+  const route = "/";
+  return (
+    <div data-route={route} className="hidden-on-landing">
+      <Hero/>
+      <Offers/>
+      <UseCases/>
+      <Included/>
+      <PersonaBar/>
+      <Steps/>
+      <ChoosePath/>
+      <CTABand/>
+      <Footer/>
+    </div>
+  );
+}

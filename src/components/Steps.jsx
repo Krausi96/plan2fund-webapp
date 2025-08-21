@@ -1,1 +1,21 @@
-import React from "react";export default function Steps(){const steps=[["Choose path","Find funding or create a plan"],["Fill essentials","We keep inputs minimal and guide you"],["Eligibility & score","See badges, confidence and gaps"],["Preview & pricing","See complexity, timeline options"],["Export","Submission‑ready documents"]];return(<section className="section"><div className="container"><h2 style={{marginTop:0}}>How it works</h2><ol style={{display:"grid",gridTemplateColumns:"repeat(auto-fit,minmax(220px,1fr))",gap:16,padding:0,margin:0,listStyle:"none"}}>{steps.map((s,i)=>(<li key={i} className="card"><div style={{fontSize:12,opacity:.7,marginBottom:6}}>Step {i+1}</div><div style={{fontWeight:600}}>{s[0]}</div><div style={{opacity:.85}}>{s[1]}</div></li>))}</ol></div></section>);}
+
+import React from "react";
+export default function Steps(){
+  const steps=[["Choose path","Find funding or create a plan"],["Fill essentials","We keep inputs minimal and guide you"],["Eligibility & confidence","Badges, gaps and decisions"],["Preview & pricing","See complexity and timeline"],["Export","Submission‑ready documents"]];
+  return (
+    <section className="section">
+      <div className="container">
+        <h2 style={{marginTop:0}}>How it works</h2>
+        <ol style={{display:"grid",gridTemplateColumns:"repeat(auto-fit,minmax(220px,1fr))",gap:16,padding:0,margin:0,listStyle:"none"}}>
+          {steps.map((s,i)=>(
+            <li key={i} className="card">
+              <div style={{fontSize:12,opacity:.7,marginBottom:6}}>Step {i+1}</div>
+              <div style={{fontWeight:600}}>{s[0]}</div>
+              <div style={{opacity:.85}}>{s[1]}</div>
+            </li>
+          ))}
+        </ol>
+      </div>
+    </section>
+  );
+}
