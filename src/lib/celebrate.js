@@ -15,14 +15,9 @@ export function celebrate(action = "done") {
   document.body.appendChild(el);
   setTimeout(() => el.remove(), 2500);
 }
-
-// auto-bind to elements with data-celebrate
 if (typeof window !== "undefined") {
   window.addEventListener("click", e => {
-    const target = e.target.closest("[data-celebrate],[data-action]");
-    if (target) {
-      const action = target.getAttribute("data-action") || "done";
-      celebrate(action);
-    }
+    const t = e.target.closest("[data-celebrate],[data-action]");
+    if (t) celebrate(t.getAttribute("data-action") || "done");
   });
 }
