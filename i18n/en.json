@@ -1,0 +1,37 @@
+{
+  "hero": {
+    "eyebrow": "Submission‑ready plans",
+    "title": "Freedom starts with a clear plan — let’s build yours.",
+    "cta_find": "Find funding",
+    "cta_plan": "Create my plan"
+  },
+  "product": {
+    "useCases_title": "Use cases",
+    "useCases_items": [
+      "Visa applications (e.g., RWR, Freelance Permit)",
+      "Grants & public funding (AWS PreSeed, FFG Basisprogramm, EU calls)",
+      "Bank loans or leasing — formatted for financial standards",
+      "Startups, coaching or projects — AMS, WKO or consulting cases"
+    ],
+    "offers_title": "What we offer",
+    "offer_custom": "Custom Business Plan (15–35 pages)",
+    "offer_review": "Upgrade & Review",
+    "offer_strategy": "Strategy & Modelling Plan (4–8 pages)"
+  },
+  "cta_band": {
+    "title": "Ready to move forward?",
+    "cta": "Start now"
+  },
+  "footer": {
+    "pricing": "Pricing",
+    "examples": "Real examples",
+    "gdpr": "GDPR/Privacy",
+    "terms": "Terms",
+    "imprint": "Impressum",
+    "contact": "Contact"
+  },
+  "lang": {
+    "en": "EN",
+    "de": "DE"
+  }
+}

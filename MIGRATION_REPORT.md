@@ -1,17 +1,12 @@
-﻿MIGRATION REPORT - UI/Frontend Corporate Design Shift (v4)
-
-Backup:
- - C:\Users\kevin\plan2fund\one_prompt_webapp_agent_package\backups\workspace_backup_20250821_140101.zip
-
-Added/Updated:
- - src\design\theme.css
- - src\design\motion.css
- - src\design\tokens.json
- - src\main.jsx
-
-Sanitization:
- - merged root\components -> src\components
- - consolidated root-level files into src (App/main/styles and common folders)
- - removed duplicate design files outside src\design\
- - quarantined duplicates to C:\Users\kevin\plan2fund\one_prompt_webapp_agent_package\plan2fund-webapp\.trash\20250821_140101
- - dist wiped; rebuilt clean
+## UI Shift — template entry
+## UI Shift â€” 2025-08-21 16:46:15
+- Design system added (design/*.css, tokens.json), i18n (lib/i18n.js, i18n/*.json)
+- Landing hero + product blocks + CTA band, header hidden on landing
+- Welcome route removed/redirected to /reco
+- Flags: DESIGN_SYSTEM_ENABLED, ANIMATION_ENABLED, I18N_ENABLED = true; CONSENT_GRANTED = false
+- Compliance doc added at docs/COMPLIANCE.md
+- Files changed:
+  - src\main.jsx
+  - src\App.jsx
+  - src\components\Landing.jsx
+  - src\components\Welcome.jsx

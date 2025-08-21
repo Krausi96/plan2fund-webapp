@@ -14,7 +14,7 @@ function Card({title, body, foot}) {
   );
 }
 
-export default function Welcome() {
+export default function null() {
   const wrap = {maxWidth: 1080, margin:"0 auto", padding:"32px 24px"};
   const h1 = {fontSize:28, fontWeight:700, margin:"0 0 8px 0"};
   const sub = {fontSize:16, opacity:.9, margin:"0 0 16px 0"};
@@ -24,8 +24,8 @@ export default function Welcome() {
   const link = {padding:"10px 12px", border:"1px solid #e5e7eb", borderRadius:8, textDecoration:"none"};
 
   return (
-    <main style={wrap} aria-label="Welcome">
-      <h1 style={h1}>Welcome - Pick your path</h1>
+    <main style={wrap} aria-label="null">
+      <h1 style={h1}>null - Pick your path</h1>
       <p style={sub}>Create new, upgrade an existing plan, or shape your strategy. <strong>Includes 1 free revision.</strong></p>
 
       <div style={grid}>

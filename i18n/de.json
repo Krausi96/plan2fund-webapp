@@ -1,0 +1,37 @@
+{
+  "hero": {
+    "eyebrow": "Einreichfertige Pläne",
+    "title": "Freiheit beginnt mit einem klaren Plan — bauen wir deinen.",
+    "cta_find": "Förderung finden",
+    "cta_plan": "Plan erstellen"
+  },
+  "product": {
+    "useCases_title": "Anwendungsfälle",
+    "useCases_items": [
+      "Visaanträge (z. B. RWR, Freiberuflerbewilligung)",
+      "Förderungen & öffentliche Mittel (AWS PreSeed, FFG Basisprogramm, EU‑Calls)",
+      "Bankkredite oder Leasing — formatiert für Finanzstandards",
+      "Startups, Coaching oder Projekte — AMS, WKO oder Beratungsfälle"
+    ],
+    "offers_title": "Unser Angebot",
+    "offer_custom": "Individueller Businessplan (15–35 Seiten)",
+    "offer_review": "Upgrade & Review",
+    "offer_strategy": "Strategie‑ & Modellierungsplan (4–8 Seiten)"
+  },
+  "cta_band": {
+    "title": "Bereit für den nächsten Schritt?",
+    "cta": "Jetzt starten"
+  },
+  "footer": {
+    "pricing": "Preise",
+    "examples": "Beispiele",
+    "gdpr": "Datenschutz",
+    "terms": "AGB",
+    "imprint": "Impressum",
+    "contact": "Kontakt"
+  },
+  "lang": {
+    "en": "EN",
+    "de": "DE"
+  }
+}

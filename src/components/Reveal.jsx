@@ -1,5 +1,20 @@
-﻿import React,{useEffect,useRef,useState} from "react";
-export default function Reveal({children}){ const ref=useRef(null); const [v,setV]=useState(false);
-  useEffect(()=>{ const el=ref.current; if(!el) return; const io=new IntersectionObserver(([e])=>{ if(e.isIntersecting){ setV(true); io.disconnect() } },{threshold:.12}); io.observe(el); return ()=>io.disconnect() },[]);
-  return <div ref={ref} className="reveal" data-inview={v}>{children}</div>;
+
+import React, { useEffect, useRef } from "react";
+
+export default function Reveal({ children, delay = 0 }) {
+  const ref = useRef(null);
+  useEffect(() => {
+    const el = ref.current;
+    if (!el) return;
+    const show = () => { el.style.animationDelay = `${delay}ms`; el.classList.add("reveal"); };
+    if ("IntersectionObserver" in window) {
+      const io = new IntersectionObserver((entries) => {
+        entries.forEach(e => { if (e.isIntersecting) { show(); io.disconnect(); } });
+      }, { threshold: 0.12 });
+      io.observe(el);
+      return () => io.disconnect();
+    }
+    show();
+  }, [delay]);
+  return <div ref={ref}>{children}</div>;
 }

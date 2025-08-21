@@ -14,7 +14,7 @@ export default function Landing() {
         Turn your inputs and ideas into submission-ready business documents aligned to institutional and funding requirements.
       </p>
       <div style={row}>
-        <a href="#/welcome" style={{...btn, background:"#0a84ff", color:"#fff"}}>Go to Welcome</a>
+        <a href="#/null" style={{...btn, background:"#0a84ff", color:"#fff"}}>Go to null</a>
         <a href="#/reco" style={btn}>Try Recommendation (Lead Magnet)</a>
       </div>
     </main>

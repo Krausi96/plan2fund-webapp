@@ -1,4 +1,6 @@
-﻿// src/main.jsx — dynamic, Vercel-safe entry (no hard dev imports)
+import "../design/motion.css";
+import "../design/theme.css";
+// src/main.jsx — dynamic, Vercel-safe entry (no hard dev imports)
 import React, { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import "./styles.css";
