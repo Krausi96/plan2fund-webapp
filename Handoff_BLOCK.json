@@ -1,13 +1,7 @@
 ﻿{
     "last_shift":  {
-                       "date":  "2025-08-21 16:46:15",
-                       "flags":  {
-                                     "ANIMATION_ENABLED":  true,
-                                     "CONSENT_GRANTED":  false,
-                                     "DESIGN_SYSTEM_ENABLED":  true,
-                                     "I18N_ENABLED":  true
-                                 },
-                       "name":  "UI/Frontend Corporate Design",
-                       "notes":  "Landing hero + grid + features + CTA; Welcome removed; header hidden on landing."
+                       "date":  "2025-08-21 17:22:25",
+                       "name":  "UI quick fix",
+                       "notes":  "Imports injected; welcome route removed."
                    }
 }

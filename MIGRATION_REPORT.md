@@ -10,3 +10,7 @@
   - src\App.jsx
   - src\components\Landing.jsx
   - src\components\Welcome.jsx
+## Quick fix - 2025-08-21 17:22:25
+- Injected global design imports and header/celebrate hooks
+- Replaced '/welcome' with '/reco' routes
+

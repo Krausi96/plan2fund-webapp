@@ -1,1 +1,0 @@
-import React from "react";import {createRoot} from "react-dom/client";import Header from "../components/Header.jsx";try{const p=typeof window!=="undefined"?window.location.pathname:"/";if(p!=="/"){const m=document.createElement("div");document.body.prepend(m);createRoot(m).render(<Header/>);}}catch{}

@@ -1,3 +1,6 @@
-{
-    "CONSENT_GRANTED":  false
+﻿{
+    "ANIMATION_ENABLED":  true,
+    "CONSENT_GRANTED":  false,
+    "DESIGN_SYSTEM_ENABLED":  true,
+    "I18N_ENABLED":  true
 }

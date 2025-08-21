@@ -1,3 +1,5 @@
+﻿import "./lib/celebrate.js";
+import "./lib/header.mount.jsx";
 import "../design/motion.css";
 import "../design/theme.css";
 // src/main.jsx — dynamic, Vercel-safe entry (no hard dev imports)
@@ -45,3 +47,10 @@ const path = clean(window.location.pathname);
     createRoot(rootEl).render(<StrictMode><App /></StrictMode>);
   }
 })();
+
+
+
+
+
+
+

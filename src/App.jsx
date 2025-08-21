@@ -1,4 +1,4 @@
-import "../design/motion.css";
+﻿import "../design/motion.css";
 import "../design/theme.css";
 import { useState } from "react";
 import NavBar from "./components/NavBar";
@@ -11,7 +11,7 @@ import CheckoutPage from "./pages/Checkout";
 import AfterSales from "./pages/AfterSales";
 import "../design/theme.css";
 import "../design/motion.css";
-import "./lib/header.mount.js";
+import "./lib/header.mount.jsx";
 import "./lib/celebrate.js";
 
 
@@ -43,3 +43,6 @@ export default function App(){
     </div>
   );
 }
+
+
+
