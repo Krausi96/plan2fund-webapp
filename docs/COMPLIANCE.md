@@ -1,24 +1,9 @@
+# COMPLIANCE (EU/Austria) — v2
 
-# COMPLIANCE (EU/Austria)
-
-## GDPR (DSGVO)
-- **No trackers by default.** Only enable analytics if `CONSENT_GRANTED=true`.
-- **Cookie banner only** if non‑essential cookies are used.
-- **Data minimization.** Collect only what's needed to generate the plan.
-- **Local storage:** language preference only (no PII).
-- **User rights:** Link to Privacy in the footer (access, deletion, correction).
-
-## Legal Links
-Add footer links (placeholders included):
-- GDPR/Privacy, Terms (AGB), Impressum, Contact.
-
-## E‑Commerce (digital services)
-- Display prices with currency and **VAT notice** (“incl./excl. VAT” per strategy).
-- Show company info in Impressum placeholder.
-
-## Accessibility
-- Mobile‑first, color‑contrast AA.
-- Motion: subtle and respects `prefers-reduced-motion`.
-
-## Flags
-- `CONSENT_GRANTED=false` by default; gate any analytics behind it.
+- No trackers by default; analytics gated behind CONSENT_GRANTED=false.
+- Cookie banner only if non‑essential cookies are enabled.
+- Data minimization: only inputs needed to generate plans.
+- LocalStorage: language preference only (no PII).
+- Legal pages shipped as static public routes: /gdpr.html, /terms.html, /impressum.html, /contact.html, /pricing.html.
+- Pricing shows currency (EUR) and VAT notice. Impressum placeholder included.
+- Accessibility: AA contrast; motion respects prefers-reduced-motion.

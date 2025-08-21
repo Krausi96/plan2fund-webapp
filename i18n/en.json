@@ -1,22 +1,74 @@
 {
   "hero": {
     "eyebrow": "Submission‑ready plans",
-    "title": "Freedom starts with a clear plan — let’s build yours.",
-    "cta_find": "Find funding",
-    "cta_plan": "Create my plan"
+    "title": "Freedom starts with a clear plan — let’s build yours."
   },
-  "product": {
-    "useCases_title": "Use cases",
-    "useCases_items": [
+  "value": {
+    "line1": "Whether you're shaping an idea, applying for funding or preparing a visa — we turn your thoughts, drafts or existing business into a submission‑ready Business Plan.",
+    "line2": "Built to meet standards of institutions, banks & public funding programs nationally & internationally."
+  },
+  "usecases": {
+    "title": "Use cases",
+    "items": [
       "Visa applications (e.g., RWR, Freelance Permit)",
       "Grants & public funding (AWS PreSeed, FFG Basisprogramm, EU calls)",
       "Bank loans or leasing — formatted for financial standards",
       "Startups, coaching or projects — AMS, WKO or consulting cases"
-    ],
-    "offers_title": "What we offer",
-    "offer_custom": "Custom Business Plan (15–35 pages)",
-    "offer_review": "Upgrade & Review",
-    "offer_strategy": "Strategy & Modelling Plan (4–8 pages)"
+    ]
+  },
+  "offers": {
+    "title": "What we offer",
+    "items": [
+      {
+        "title": "Custom Business Plan (15–35 pages)",
+        "desc": "Full plan from your business model — aligned with institutional & funding requirements.",
+        "ideal": "Ideal for visa, grant or loan/leasing when your model is clear."
+      },
+      {
+        "title": "Upgrade & Review",
+        "desc": "We revise and upgrade your draft to pass — incl. formatting, rewriting, and expert edits for AWS, FFG, banks or visa programs.",
+        "ideal": "Ideal for drafts that need structure & formatting."
+      },
+      {
+        "title": "Strategy & Modelling Plan (4–8 pages)",
+        "desc": "Shape your model & strategy — ideal for early‑stage ideas and pivots.",
+        "ideal": "Can be combined with a Business Plan or Upgrade & Review."
+      }
+    ]
+  },
+  "included": {
+    "title": "What’s included",
+    "items": [
+      "Structured, submission‑ready business plan or document",
+      "Editable Google Doc or Word (PDF optional)",
+      "1‑Page Executive Summary that resumes your plan",
+      "Optional NDA (Trust Agreement)",
+      "1 free revision for minor adjustments",
+      "Async by default; support available"
+    ]
+  },
+  "choose": {
+    "title": "Choose your path",
+    "cards": [
+      {
+        "title": "Find funding",
+        "desc": "Recommendation engine ranks top 5 programs with reasons.",
+        "cta": "Go to funding",
+        "href": "/reco"
+      },
+      {
+        "title": "Create my plan",
+        "desc": "Business Plan generator/editor with institutional overlays.",
+        "cta": "Start plan",
+        "href": "/plan"
+      },
+      {
+        "title": "Upgrade & Review",
+        "desc": "Upload your draft; we fix structure and formatting.",
+        "cta": "Upgrade draft",
+        "href": "/plan?mode=review"
+      }
+    ]
   },
   "cta_band": {
     "title": "Ready to move forward?",
@@ -27,11 +79,7 @@
     "examples": "Real examples",
     "gdpr": "GDPR/Privacy",
     "terms": "Terms",
-    "imprint": "Impressum",
+    "impressum": "Impressum",
     "contact": "Contact"
-  },
-  "lang": {
-    "en": "EN",
-    "de": "DE"
   }
 }

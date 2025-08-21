@@ -1,22 +1,74 @@
 {
   "hero": {
     "eyebrow": "Einreichfertige Pläne",
-    "title": "Freiheit beginnt mit einem klaren Plan — bauen wir deinen.",
-    "cta_find": "Förderung finden",
-    "cta_plan": "Plan erstellen"
+    "title": "Freiheit beginnt mit einem klaren Plan — bauen wir deinen."
   },
-  "product": {
-    "useCases_title": "Anwendungsfälle",
-    "useCases_items": [
+  "value": {
+    "line1": "Ob Idee, Förderung oder Visum — wir machen aus Gedanken, Entwürfen oder bestehendem Geschäft einen einreichfertigen Businessplan.",
+    "line2": "Ausgerichtet auf Standards von Institutionen, Banken & öffentlichen Programmen national & international."
+  },
+  "usecases": {
+    "title": "Anwendungsfälle",
+    "items": [
       "Visaanträge (z. B. RWR, Freiberuflerbewilligung)",
       "Förderungen & öffentliche Mittel (AWS PreSeed, FFG Basisprogramm, EU‑Calls)",
       "Bankkredite oder Leasing — formatiert für Finanzstandards",
       "Startups, Coaching oder Projekte — AMS, WKO oder Beratungsfälle"
-    ],
-    "offers_title": "Unser Angebot",
-    "offer_custom": "Individueller Businessplan (15–35 Seiten)",
-    "offer_review": "Upgrade & Review",
-    "offer_strategy": "Strategie‑ & Modellierungsplan (4–8 Seiten)"
+    ]
+  },
+  "offers": {
+    "title": "Unser Angebot",
+    "items": [
+      {
+        "title": "Individueller Businessplan (15–35 Seiten)",
+        "desc": "Vollständiger Plan aus deinem Geschäftsmodell — abgestimmt auf institutionelle & Förder‑Anforderungen.",
+        "ideal": "Ideal für Visum, Förderung oder Kredit/Leasing bei klarem Modell."
+      },
+      {
+        "title": "Upgrade & Review",
+        "desc": "Wir überarbeiten deinen Entwurf — inkl. Formatierung, Umtexten und Experten‑Edits für AWS, FFG, Banken oder Visa.",
+        "ideal": "Ideal für Entwürfe mit Struktur‑/Formatierungsbedarf."
+      },
+      {
+        "title": "Strategie‑ & Modellierungsplan (4–8 Seiten)",
+        "desc": "Wir schärfen Modell & Strategie — ideal für frühe Ideen oder Pivots.",
+        "ideal": "Kombinierbar mit Businessplan oder Upgrade & Review."
+      }
+    ]
+  },
+  "included": {
+    "title": "Enthalten",
+    "items": [
+      "Strukturierter, einreichfertiger Businessplan oder Vorlage",
+      "Editierbar als Google Doc oder Word (PDF optional)",
+      "1‑seitige Executive Summary",
+      "Optional: NDA (Vertraulichkeit)",
+      "1 kostenlose Korrektur kleiner Anpassungen",
+      "Asynchron standardmäßig; Support möglich"
+    ]
+  },
+  "choose": {
+    "title": "Wähle deinen Weg",
+    "cards": [
+      {
+        "title": "Förderung finden",
+        "desc": "Recommendation‑Engine mit Top‑5 Programmen und Begründungen.",
+        "cta": "Zu Förderung",
+        "href": "/reco"
+      },
+      {
+        "title": "Plan erstellen",
+        "desc": "Business‑Plan Generator/Editor mit institutionellen Overlays.",
+        "cta": "Plan starten",
+        "href": "/plan"
+      },
+      {
+        "title": "Upgrade & Review",
+        "desc": "Entwurf hochladen; wir fixen Struktur & Formatierung.",
+        "cta": "Entwurf upgraden",
+        "href": "/plan?mode=review"
+      }
+    ]
   },
   "cta_band": {
     "title": "Bereit für den nächsten Schritt?",
@@ -27,11 +79,7 @@
     "examples": "Beispiele",
     "gdpr": "Datenschutz",
     "terms": "AGB",
-    "imprint": "Impressum",
+    "impressum": "Impressum",
     "contact": "Kontakt"
-  },
-  "lang": {
-    "en": "EN",
-    "de": "DE"
   }
 }
