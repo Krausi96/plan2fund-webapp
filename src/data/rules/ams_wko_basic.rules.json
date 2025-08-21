@@ -1,0 +1,51 @@
+{
+  "programId": "ams_wko_basic",
+  "programName": "AMS/WKO Basic",
+  "requiredKeys": [
+    "is_unemployed",
+    "founder_training_needed",
+    "business_plan_exists_or_in_work",
+    "registration_ready",
+    "country"
+],
+  "criteria": [
+    {
+        "weight":  0.1,
+        "key":  "country",
+        "op":  "equals",
+        "value":  "AT",
+        "reason":  "Austria"
+    },
+    {
+        "weight":  0.25,
+        "key":  "is_unemployed",
+        "op":  "equals",
+        "value":  true,
+        "reason":  "AMS target group"
+    },
+    {
+        "weight":  0.15,
+        "key":  "founder_training_needed",
+        "op":  "equals",
+        "value":  true,
+        "reason":  "Training relevant"
+    },
+    {
+        "weight":  0.25,
+        "key":  "business_plan_exists_or_in_work",
+        "op":  "equals",
+        "value":  true,
+        "reason":  "Plan in progress"
+    },
+    {
+        "weight":  0.25,
+        "key":  "registration_ready",
+        "op":  "equals",
+        "value":  true,
+        "reason":  "Ready to register"
+    }
+],
+  "thresholds": { "eligible": 0.7, "discuss": 0.5 },
+  "version": "7",
+  "notes": "Internal heuristic scoring for recommendation and gating."
+}

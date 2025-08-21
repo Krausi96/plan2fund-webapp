@@ -1,0 +1,43 @@
+{
+  "version": "elig_rules_v1",
+  "rules": [
+    {
+      "id": "geo_at",
+      "all": [
+        {
+          "field": "location",
+          "op": "containsAny",
+          "value": [
+            "Austria",
+            "AT",
+            "\u00d6sterreich"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "trl_min",
+      "all": [
+        {
+          "field": "trl",
+          "op": ">=",
+          "value": 3
+        }
+      ]
+    },
+    {
+      "id": "entity_allowed",
+      "any": [
+        {
+          "field": "entity_type",
+          "op": "in",
+          "value": [
+            "gmbh",
+            "ag",
+            "sole_proprietor"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "version": "8",
+  "locale": ["en", "de"],
+  "sections": [
+    { "id":"executive_summary", "label_en":"Executive Summary", "label_de":"Kurzfassung" },
+    { "id":"product_service",   "label_en":"Product & Service",  "label_de":"Produkt & Service" },
+    { "id":"company_team",      "label_en":"Company & Team",     "label_de":"Unternehmen & Team" },
+    { "id":"market",            "label_en":"Market",             "label_de":"Markt" },
+    { "id":"marketing_sales",   "label_en":"Marketing & Sales",  "label_de":"Marketing & Vertrieb" },
+    { "id":"financials",        "label_en":"Financials (up to 24 months)", "label_de":"Finanzen (bis 24 Monate)" },
+    { "id":"funding_fit",       "label_en":"Funding Fit",        "label_de":"F??rder-Fit" },
+    { "id":"attachments",       "label_en":"Attachments",        "label_de":"Anh??nge" }
+  ],
+  "fields": [
+    { "id":"exec.one_liner", "section":"executive_summary", "type":"text",
+      "label_en":"One-sentence pitch", "label_de":"Ein-Satz-Pitch", "required": true, "overlays":[] },
+    { "id":"product.description", "section":"product_service", "type":"textarea",
+      "label_en":"What are you building?", "label_de":"Was bauen Sie?",
+      "required": true, "overlays":[] },
+    { "id":"company.legal_form", "section":"company_team", "type":"select",
+      "label_en":"Legal form", "label_de":"Rechtsform",
+      "options":["GmbH","OG","KG","Einzelunternehmen","Verein","other"], "required": false, "overlays":[] },
+    { "id":"team.size", "section":"company_team", "type":"number",
+      "label_en":"Team size", "label_de":"Teamgr????e", "min":1, "max":500, "required": false, "overlays":[] },
+    { "id":"market.segments", "section":"market", "type":"textarea",
+      "label_en":"Target segments", "label_de":"Zielsegmente", "required": true, "overlays":[] },
+    { "id":"marketing.gtm", "section":"marketing_sales", "type":"textarea",
+      "label_en":"Go-to-market plan", "label_de":"Go-to-market Plan", "required": true, "overlays":[] },
+    { "id":"financials.start_month", "section":"financials", "type":"month",
+      "label_en":"Forecast start month", "label_de":"Startmonat der Planung", "required": true, "overlays":[] },
+    { "id":"financials.monthly_forecast", "section":"financials", "type":"table",
+      "label_en":"Monthly forecast (???24 rows)", "label_de":"Monatliche Planung (???24 Zeilen)",
+      "columns":["month","revenue","cogs","opex","capex"], "max_rows":24, "required": true, "overlays":[] },
+    { "id":"funding.selected_program", "section":"funding_fit", "type":"select",
+      "label_en":"Selected funding program", "label_de":"Ausgew??hltes F??rderprogramm",
+      "options":["aws_preseed","ffg_basisprogramm","eu_startup_call","visa_rwr","ams_wko_basic","bank_loan_leasing","custom"], "required": false, "overlays":[] },
+    { "id":"attachments.files", "section":"attachments", "type":"upload",
+      "label_en":"Upload files (CV, summary, budget, etc.)", "label_de":"Dateien hochladen (CV, Zusammenfassung, Budget, etc.)",
+      "required": false, "overlays":[] }
+  ]
+}

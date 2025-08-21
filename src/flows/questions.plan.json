@@ -1,0 +1,106 @@
+{
+  "version": "plan_q_v1",
+  "sections": [
+    {
+      "id": "exec_summary",
+      "title": "Executive Summary",
+      "required": true,
+      "fields": [
+        {
+          "id": "company_name",
+          "type": "text",
+          "label": "Company name",
+          "required": true
+        },
+        {
+          "id": "mission",
+          "type": "textarea",
+          "label": "Mission (Why)",
+          "required": true
+        },
+        {
+          "id": "value_prop",
+          "type": "textarea",
+          "label": "Value proposition",
+          "required": true
+        }
+      ]
+    },
+    {
+      "id": "market",
+      "title": "Market & Competition",
+      "required": true,
+      "fields": [
+        {
+          "id": "market_size",
+          "type": "text",
+          "label": "TAM/SAM/SOM (numbers)",
+          "required": true
+        },
+        {
+          "id": "competitors",
+          "type": "textarea",
+          "label": "Key competitors",
+          "required": true
+        }
+      ]
+    },
+    {
+      "id": "gtm",
+      "title": "Go-to-Market",
+      "required": true,
+      "fields": [
+        {
+          "id": "channels",
+          "type": "textarea",
+          "label": "Channels",
+          "required": true
+        },
+        {
+          "id": "milestones",
+          "type": "textarea",
+          "label": "Milestones",
+          "required": true
+        }
+      ]
+    },
+    {
+      "id": "financials",
+      "title": "Financial Plan",
+      "required": true,
+      "fields": [
+        {
+          "id": "assumptions",
+          "type": "textarea",
+          "label": "Assumptions",
+          "required": true
+        },
+        {
+          "id": "hiring_plan",
+          "type": "textarea",
+          "label": "Hiring plan",
+          "required": false
+        }
+      ]
+    },
+    {
+      "id": "funding",
+      "title": "Funding Strategy",
+      "required": true,
+      "fields": [
+        {
+          "id": "program_targets",
+          "type": "textarea",
+          "label": "Target programs",
+          "required": true
+        },
+        {
+          "id": "cofunding_proof",
+          "type": "textarea",
+          "label": "Cofunding proof",
+          "required": false
+        }
+      ]
+    }
+  ]
+}

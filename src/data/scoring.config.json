@@ -1,0 +1,8 @@
+{
+  "weights": {
+    "fit": 0.5,
+    "readiness": 0.25,
+    "effort": 0.15,
+    "confidence": 0.10
+  }
+}

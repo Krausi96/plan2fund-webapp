@@ -1,0 +1,38 @@
+[
+  {
+    "id": "aws_preseed",
+    "name": "aws PreSeed",
+    "country": "AT",
+    "stage": ["preseed"],
+    "focus": ["AI","deeptech"],
+    "requires_company": true,
+    "requires_ip": true,
+    "max_grant_eur": 200000,
+    "cofunding_ratio": 0.5,
+    "application_complexity": 0.6
+  },
+  {
+    "id": "ffg_basisprogramm",
+    "name": "FFG Basisprogramm",
+    "country": "AT",
+    "stage": ["preseed","seed"],
+    "focus": ["AI","software","hardware"],
+    "requires_company": true,
+    "requires_ip": false,
+    "max_grant_eur": 500000,
+    "cofunding_ratio": 0.5,
+    "application_complexity": 0.7
+  },
+  {
+    "id": "vienna_innov",
+    "name": "Vienna Business Agency - Innovation",
+    "country": "AT",
+    "stage": ["preseed","seed"],
+    "focus": ["AI","software"],
+    "requires_company": true,
+    "requires_ip": false,
+    "max_grant_eur": 200000,
+    "cofunding_ratio": 0.4,
+    "application_complexity": 0.5
+  }
+]

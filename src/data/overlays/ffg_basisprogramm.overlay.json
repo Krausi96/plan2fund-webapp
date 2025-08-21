@@ -1,0 +1,26 @@
+{
+  "programId": "ffg_basisprogramm",
+  "programName": "FFG Basisprogramm",
+  "category": "grant",
+  "requiredKeys": [
+    "country",
+    "project_type",
+    "innovation_level",
+    "trl",
+    "cofinancing_possible",
+    "economic_effect_at"
+],
+  "document_requirements": [
+    "Project description",
+    "Budget breakdown",
+    "AT economic impact note"
+],
+  "ui_hints": { "showSections": [
+    "product_service",
+    "financials",
+    "funding_fit",
+    "attachments"
+] },
+  "sources": { "official": [], "last_updated": "", "notes": "" },
+  "version": "8"
+}

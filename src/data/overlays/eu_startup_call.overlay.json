@@ -1,0 +1,27 @@
+{
+  "programId": "eu_startup_call",
+  "programName": "EU Startup Call",
+  "category": "grant",
+  "requiredKeys": [
+    "eu_member_state",
+    "cross_border_potential",
+    "innovation_level",
+    "scalability",
+    "team_size",
+    "cofinancing_possible"
+],
+  "document_requirements": [
+    "Business plan",
+    "EU impact",
+    "Co-financing proof"
+],
+  "ui_hints": { "showSections": [
+    "executive_summary",
+    "market",
+    "financials",
+    "funding_fit",
+    "attachments"
+] },
+  "sources": { "official": [], "last_updated": "", "notes": "" },
+  "version": "8"
+}

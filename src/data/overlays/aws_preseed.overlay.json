@@ -1,0 +1,27 @@
+{
+  "programId": "aws_preseed",
+  "programName": "AWS PreSeed",
+  "category": "grant",
+  "requiredKeys": [
+    "country",
+    "company_stage",
+    "innovation_level",
+    "trl",
+    "cofinancing_possible",
+    "project_budget_eur",
+    "ip_ownership"
+],
+  "document_requirements": [
+    "Project description",
+    "R\u0026D budget",
+    "IP ownership note"
+],
+  "ui_hints": { "showSections": [
+    "product_service",
+    "financials",
+    "funding_fit",
+    "attachments"
+] },
+  "sources": { "official": [], "last_updated": "", "notes": "" },
+  "version": "8"
+}

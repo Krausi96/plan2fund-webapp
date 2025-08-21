@@ -1,0 +1,113 @@
+/* src/styles.css - clean, Apple/Stripe-inspired, ASCII only */
+
+:root{
+  --bg-hero-start:#0b1220;
+  --bg-hero-end:#111827;
+  --bg-body:#f6f7fb;
+  --text:#0f172a;
+  --muted:#475569;
+  --line:#e5e7eb;
+  --card:#ffffff;
+  --accent:#2563eb;
+  --accent-2:#0ea5e9;
+  --radius:16px;
+  --shadow:0 12px 28px rgba(0,0,0,0.08);
+}
+
+*{box-sizing:border-box}
+html,body,#root{height:100%}
+body{margin:0;background:var(--bg-body);color:var(--text);font-family:ui-sans-serif,system-ui,Segoe UI,Roboto,Helvetica,Arial}
+
+.container{max-width:1100px;margin:0 auto;padding:0 20px}
+
+/* NAV (existing) keeps its layout; this just ensures contrast */
+nav, .navbar{background:transparent}
+
+/* HERO */
+.hero{
+  position:relative;
+  background:linear-gradient(180deg,var(--bg-hero-start),var(--bg-hero-end));
+  min-height:68vh;
+  display:grid;
+  align-items:center;
+  padding:72px 0 48px;
+  overflow:hidden;
+}
+.hero-inner{position:relative; z-index:2; text-align:center}
+.hero-title{
+  margin:0 0 12px;
+  font-size:48px; line-height:1.1; font-weight:800; color:#f8fafc;
+}
+.hero-sub{margin:0 auto 28px; max-width:720px; color:#cbd5e1}
+.hero-cta{display:flex; gap:12px; justify-content:center; flex-wrap:wrap; margin-top:8px}
+
+/* Subtle floating shapes behind content (replaces emoji rain) */
+.hero-bg{position:absolute; inset:0; z-index:1; pointer-events:none; opacity:0.25}
+.floaters{list-style:none; margin:0; padding:0; position:absolute; inset:0}
+.floaters li{
+  position:absolute; top:-40px; width:16px; height:16px; border-radius:50%;
+  background:linear-gradient(180deg, rgba(255,255,255,0.8), rgba(255,255,255,0.2));
+  box-shadow:0 8px 20px rgba(0,0,0,0.15);
+  animation:drift 12s linear infinite;
+  filter:blur(0.5px);
+}
+@keyframes drift{
+  0%{ transform:translateY(-20px) translateX(0) rotate(0) }
+  50%{ transform:translateY(45vh) translateX(25vw) rotate(180deg) }
+  100%{ transform:translateY(0) translateX(0) rotate(360deg) }
+}
+
+/* Sections */
+.section{padding:36px 0}
+.stack{display:grid; gap:16px}
+.grid-3{display:grid; gap:16px; grid-template-columns:repeat(3,1fr)}
+@media (max-width:1000px){ .grid-3{grid-template-columns:1fr} }
+
+.card{
+  background:var(--card);
+  border:1px solid var(--line);
+  border-radius:var(--radius);
+  padding:18px;
+  box-shadow:var(--shadow);
+}
+.card-title{margin:0 0 8px; font-size:18px; font-weight:800}
+.lead{font-size:16px; color:var(--muted)}
+.dim{color:#64748b}
+
+.list{margin:0; padding-left:18px}
+.list li{margin:6px 0}
+
+/* Buttons */
+.btn{
+  display:inline-flex; align-items:center; justify-content:center;
+  padding:12px 18px; border-radius:12px; border:1px solid var(--line);
+  font-weight:800; cursor:pointer; text-decoration:none;
+}
+.btn-primary{background:#111827; color:#fff; border-color:#1f2937}
+.btn-primary:hover{filter:brightness(1.08)}
+.btn-secondary{background:#fff; color:#111827}
+.btn-secondary:hover{filter:brightness(0.98)}
+
+/* Links under sections */
+.legal-links{ text-align:center; color:#64748b; font-size:14px; }
+.legal-links a{ color:#334155; text-decoration:none }
+.legal-links a:hover{ text-decoration:underline }
+.legal-links .sep{ padding:0 8px }
+
+/* Form readability (Reco path) */
+input, select, textarea{
+  background:#0b1220; color:#e5e7eb; border:1px solid #334155; border-radius:10px;
+}
+input, select{ height:40px; padding:0 10px }
+textarea{ padding:10px }
+
+/* Program cards readability */
+.ProgramCard{
+  background:#fff !important;
+  color:#0f172a;
+  border:1px solid var(--line) !important;
+  border-radius:16px !important;
+  box-shadow:var(--shadow);
+}
+.ProgramCard a{ color:#2563eb; text-decoration:none }
+.ProgramCard a:hover{ text-decoration:underline }

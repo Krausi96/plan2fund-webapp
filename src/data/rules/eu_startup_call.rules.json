@@ -1,0 +1,59 @@
+{
+  "programId": "eu_startup_call",
+  "programName": "EU Startup Call",
+  "requiredKeys": [
+    "eu_member_state",
+    "cross_border_potential",
+    "innovation_level",
+    "scalability",
+    "team_size",
+    "cofinancing_possible"
+],
+  "criteria": [
+    {
+        "weight":  0.15,
+        "key":  "eu_member_state",
+        "op":  "equals",
+        "value":  true,
+        "reason":  "EU eligibility"
+    },
+    {
+        "weight":  0.2,
+        "key":  "cross_border_potential",
+        "op":  "gte",
+        "value":  0.6,
+        "reason":  "EU cross-border potential"
+    },
+    {
+        "weight":  0.2,
+        "key":  "innovation_level",
+        "op":  "gte",
+        "value":  0.7,
+        "reason":  "High innovation"
+    },
+    {
+        "weight":  0.2,
+        "key":  "scalability",
+        "op":  "gte",
+        "value":  0.6,
+        "reason":  "Scalable model"
+    },
+    {
+        "weight":  0.1,
+        "key":  "team_size",
+        "op":  "gte",
+        "value":  2,
+        "reason":  "Team capacity"
+    },
+    {
+        "weight":  0.15,
+        "key":  "cofinancing_possible",
+        "op":  "equals",
+        "value":  true,
+        "reason":  "Co-financing"
+    }
+],
+  "thresholds": { "eligible": 0.7, "discuss": 0.5 },
+  "version": "7",
+  "notes": "Internal heuristic scoring for recommendation and gating."
+}

@@ -1,0 +1,162 @@
+{
+  "version": "reco_q_v1",
+  "questions": [
+    {
+      "id": "company_stage",
+      "type": "single",
+      "label": "Company stage",
+      "required": true,
+      "options": [
+        "idea",
+        "pre-seed",
+        "seed",
+        "growth"
+      ],
+      "weight": 1
+    },
+    {
+      "id": "entity_type",
+      "type": "single",
+      "label": "Entity type",
+      "required": true,
+      "options": [
+        "sole_proprietor",
+        "gmbh",
+        "ag",
+        "association",
+        "research"
+      ],
+      "weight": 1
+    },
+    {
+      "id": "location",
+      "type": "text",
+      "label": "Registered location (Country/State/City)",
+      "required": true,
+      "weight": 1
+    },
+    {
+      "id": "sector",
+      "type": "multi",
+      "label": "Sector / keywords",
+      "required": true,
+      "options": [
+        "AI",
+        "Health",
+        "Climate",
+        "Manufacturing",
+        "SaaS",
+        "Fintech"
+      ],
+      "weight": 1
+    },
+    {
+      "id": "trl",
+      "type": "number",
+      "label": "Technology readiness level (1-9)",
+      "min": 1,
+      "max": 9,
+      "required": true,
+      "weight": 1
+    },
+    {
+      "id": "team_size",
+      "type": "number",
+      "label": "Team size (FTE)",
+      "min": 0,
+      "required": true,
+      "weight": 0.5
+    },
+    {
+      "id": "budget_opex",
+      "type": "currency",
+      "label": "OPEX budget (\u20ac)",
+      "required": false,
+      "weight": 0.3
+    },
+    {
+      "id": "budget_capex",
+      "type": "currency",
+      "label": "CAPEX budget (\u20ac)",
+      "required": false,
+      "weight": 0.3
+    },
+    {
+      "id": "cofunding_pct",
+      "type": "number",
+      "label": "Available co-funding (%)",
+      "min": 0,
+      "max": 100,
+      "required": false,
+      "weight": 0.7
+    },
+    {
+      "id": "ip_status",
+      "type": "single",
+      "label": "IP status",
+      "options": [
+        "none",
+        "filed",
+        "granted",
+        "licensed"
+      ],
+      "required": false,
+      "weight": 0.4
+    },
+    {
+      "id": "revenue_ytd",
+      "type": "currency",
+      "label": "Revenue YTD (\u20ac)",
+      "required": false,
+      "weight": 0.2
+    },
+    {
+      "id": "runway_months",
+      "type": "number",
+      "label": "Runway (months)",
+      "min": 0,
+      "required": false,
+      "weight": 0.4
+    },
+    {
+      "id": "project_timeline",
+      "type": "single",
+      "label": "Project timeline",
+      "required": true,
+      "options": [
+        "<3m",
+        "3-6m",
+        "6-12m",
+        ">12m"
+      ],
+      "weight": 0.6
+    },
+    {
+      "id": "hiring_plan",
+      "type": "multi",
+      "label": "Hiring plan",
+      "options": [
+        "R&D",
+        "Sales",
+        "Marketing",
+        "Ops"
+      ],
+      "required": false,
+      "weight": 0.3
+    },
+    {
+      "id": "prev_grants",
+      "type": "boolean",
+      "label": "Previously received grants?",
+      "required": false,
+      "weight": 0.2
+    },
+    {
+      "id": "deadline_focus",
+      "type": "date",
+      "label": "Target submission deadline (optional)",
+      "required": false,
+      "weight": 0.3
+    }
+  ]
+}

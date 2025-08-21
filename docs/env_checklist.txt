@@ -1,0 +1,4 @@
+# ENV Checklist (staged)
+VITE_TURNSTILE_SITE_KEY=
+SUPABASE_URL=         # staged
+SUPABASE_ANON_KEY=    # staged

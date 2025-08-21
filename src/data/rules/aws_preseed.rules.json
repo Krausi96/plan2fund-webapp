@@ -1,0 +1,82 @@
+{
+  "programId": "aws_preseed",
+  "programName": "AWS PreSeed",
+  "requiredKeys": [
+    "country",
+    "company_stage",
+    "innovation_level",
+    "trl",
+    "team_size",
+    "registered_in_at",
+    "cofinancing_possible",
+    "project_budget_eur",
+    "ip_ownership"
+],
+  "criteria": [
+    {
+        "weight":  0.15,
+        "key":  "country",
+        "op":  "equals",
+        "value":  "AT",
+        "reason":  "Company in Austria"
+    },
+    {
+        "weight":  0.05,
+        "key":  "registered_in_at",
+        "op":  "equals",
+        "value":  true,
+        "reason":  "Entity in AT (or intends to)"
+    },
+    {
+        "weight":  0.1,
+        "key":  "company_stage",
+        "op":  "one_of",
+        "value":  [
+                      "preseed",
+                      "seed"
+                  ],
+        "reason":  "Preseed/seed stage"
+    },
+    {
+        "weight":  0.2,
+        "key":  "innovation_level",
+        "op":  "gte",
+        "value":  0.7,
+        "reason":  "High innovation"
+    },
+    {
+        "weight":  0.15,
+        "key":  "trl",
+        "op":  "between",
+        "value":  [
+                      3,
+                      6
+                  ],
+        "reason":  "TRL 3-6"
+    },
+    {
+        "weight":  0.15,
+        "key":  "cofinancing_possible",
+        "op":  "equals",
+        "value":  true,
+        "reason":  "Co-financing available"
+    },
+    {
+        "weight":  0.1,
+        "key":  "project_budget_eur",
+        "op":  "gte",
+        "value":  50000,
+        "reason":  "Meaningful R\u0026D budget"
+    },
+    {
+        "weight":  0.1,
+        "key":  "ip_ownership",
+        "op":  "equals",
+        "value":  true,
+        "reason":  "Owns/controls IP"
+    }
+],
+  "thresholds": { "eligible": 0.7, "discuss": 0.5 },
+  "version": "7",
+  "notes": "Internal heuristic scoring for recommendation and gating."
+}

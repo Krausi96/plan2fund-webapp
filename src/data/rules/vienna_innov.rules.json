@@ -1,0 +1,39 @@
+﻿{
+    "programId":  "vienna_innov",
+    "version":  "6B",
+    "weights":  {
+                    "baseline":  1,
+                    "mustHave":  2,
+                    "niceToHave":  0.5
+                },
+    "thresholds":  {
+                       "eligible":  0.7,
+                       "maybe":  0.4,
+                       "ineligible":  0
+                   },
+    "requiredKeys":  [
+
+                     ],
+    "criteria":  [
+                     {
+                         "key":  "country",
+                         "op":  "equalsAny",
+                         "value":  [
+                                       "AT"
+                                   ],
+                         "weight":  1,
+                         "must":  false
+                     },
+                     {
+                         "key":  "stage",
+                         "op":  "equalsAny",
+                         "value":  [
+                                       "idea",
+                                       "mvp",
+                                       "revenue"
+                                   ],
+                         "weight":  1,
+                         "must":  false
+                     }
+                 ]
+}

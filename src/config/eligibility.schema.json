@@ -1,0 +1,16 @@
+{
+  "version": "0.1.0",
+  "required": ["country", "stage", "sector", "team_size"],
+  "fields": {
+    "country": { "type": "string", "enum": ["AT","DE","EU","OTHER"] },
+    "stage":   { "type": "string", "enum": ["idea","mvp","revenue","growth"] },
+    "sector":  { "type": "string" },
+    "team_size": { "type": "number", "min": 1 },
+    "university_affiliation": { "type": "boolean" },
+    "female_founder": { "type": "boolean" }
+  },
+  "rules": [
+    { "id":"base", "if": {"country":["AT","EU"]}, "then": {"eligible": true} },
+    { "id":"team_min", "if": {"team_size_min":1}, "then": {"eligible": true} }
+  ]
+}

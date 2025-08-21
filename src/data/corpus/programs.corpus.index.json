@@ -1,0 +1,26 @@
+[
+    {
+        "id":  "aws_preseed",
+        "file":  "aws_preseed.corpus.json"
+    },
+    {
+        "id":  "ffg_basisprogramm",
+        "file":  "ffg_basisprogramm.corpus.json"
+    },
+    {
+        "id":  "eu_startup_call",
+        "file":  "eu_startup_call.corpus.json"
+    },
+    {
+        "id":  "visa_rwr",
+        "file":  "visa_rwr.corpus.json"
+    },
+    {
+        "id":  "ams_wko_basic",
+        "file":  "ams_wko_basic.corpus.json"
+    },
+    {
+        "id":  "bank_loan_leasing",
+        "file":  "bank_loan_leasing.corpus.json"
+    }
+]

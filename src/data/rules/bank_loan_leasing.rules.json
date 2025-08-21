@@ -1,0 +1,59 @@
+{
+  "programId": "bank_loan_leasing",
+  "programName": "Bank Loan/Leasing",
+  "requiredKeys": [
+    "country",
+    "collateral_or_guarantee",
+    "equity_ratio_ok",
+    "credit_history_ok",
+    "revenue_projection_ok",
+    "cashflow_buffer_months"
+],
+  "criteria": [
+    {
+        "weight":  0.1,
+        "key":  "country",
+        "op":  "equals",
+        "value":  "AT",
+        "reason":  "Banking in AT"
+    },
+    {
+        "weight":  0.25,
+        "key":  "collateral_or_guarantee",
+        "op":  "equals",
+        "value":  true,
+        "reason":  "Collateral/guarantee"
+    },
+    {
+        "weight":  0.2,
+        "key":  "equity_ratio_ok",
+        "op":  "equals",
+        "value":  true,
+        "reason":  "Equity ratio"
+    },
+    {
+        "weight":  0.15,
+        "key":  "credit_history_ok",
+        "op":  "equals",
+        "value":  true,
+        "reason":  "Credit history"
+    },
+    {
+        "weight":  0.2,
+        "key":  "revenue_projection_ok",
+        "op":  "equals",
+        "value":  true,
+        "reason":  "Projected income"
+    },
+    {
+        "weight":  0.1,
+        "key":  "cashflow_buffer_months",
+        "op":  "gte",
+        "value":  3,
+        "reason":  "Liquidity buffer"
+    }
+],
+  "thresholds": { "eligible": 0.7, "discuss": 0.5 },
+  "version": "7",
+  "notes": "Internal heuristic scoring for recommendation and gating."
+}

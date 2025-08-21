@@ -1,0 +1,32 @@
+[
+    {
+        "name":  "AWS PreSeed",
+        "id":  "aws_preseed",
+        "file":  "aws_preseed.rules.json"
+    },
+    {
+        "name":  "FFG Basisprogramm",
+        "id":  "ffg_basisprogramm",
+        "file":  "ffg_basisprogramm.rules.json"
+    },
+    {
+        "name":  "EU Startup Call",
+        "id":  "eu_startup_call",
+        "file":  "eu_startup_call.rules.json"
+    },
+    {
+        "name":  "Visa / RWR",
+        "id":  "visa_rwr",
+        "file":  "visa_rwr.rules.json"
+    },
+    {
+        "name":  "AMS/WKO Basic",
+        "id":  "ams_wko_basic",
+        "file":  "ams_wko_basic.rules.json"
+    },
+    {
+        "name":  "Bank Loan/Leasing",
+        "id":  "bank_loan_leasing",
+        "file":  "bank_loan_leasing.rules.json"
+    }
+]

@@ -1,0 +1,26 @@
+{
+  "programId": "visa_rwr",
+  "programName": "Visa / RWR",
+  "category": "visa",
+  "requiredKeys": [
+    "country",
+    "business_viable",
+    "revenue_projection_ok",
+    "no_criminal_record",
+    "health_insurance",
+    "financial_means_ok"
+],
+  "document_requirements": [
+    "Proof of means",
+    "Health insurance",
+    "Clean record"
+],
+  "ui_hints": { "showSections": [
+    "executive_summary",
+    "company_team",
+    "financials",
+    "attachments"
+] },
+  "sources": { "official": [], "last_updated": "", "notes": "" },
+  "version": "8"
+}

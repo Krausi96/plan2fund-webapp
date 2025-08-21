@@ -1,0 +1,7 @@
+Business Logic v2025-08-19 (digest)
+- Welcome shows 3 products; lead magnet Recommendation; no login (MVP); show '1 free revision'.
+- Provide FAQ, Contact, Privacy, T&C placeholders; Search field is non-functional for MVP.
+- Stage Turnstile via flag; keep payments and remote data disabled this shift.Shift 5B digest: Supabase loader + eligibility stub behind flags. DATA_SOURCE=LOCAL; SUPABASE_ENABLED=false.
+
+Shift 5B digest: Supabase loader + eligibility stub behind flags. DATA_SOURCE=LOCAL; SUPABASE_ENABLED=false.
+

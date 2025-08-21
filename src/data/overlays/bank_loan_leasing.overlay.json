@@ -1,0 +1,25 @@
+{
+  "programId": "bank_loan_leasing",
+  "programName": "Bank Loan/Leasing",
+  "category": "bank",
+  "requiredKeys": [
+    "country",
+    "collateral_or_guarantee",
+    "equity_ratio_ok",
+    "credit_history_ok",
+    "revenue_projection_ok",
+    "cashflow_buffer_months"
+],
+  "document_requirements": [
+    "Financial statements",
+    "Collateral proof",
+    "Credit history"
+],
+  "ui_hints": { "showSections": [
+    "financials",
+    "funding_fit",
+    "attachments"
+] },
+  "sources": { "official": [], "last_updated": "", "notes": "" },
+  "version": "8"
+}

@@ -1,0 +1,67 @@
+[
+  {
+    "id": "aws_preseed",
+    "name": "AWS PreSeed",
+    "jurisdictions": ["AT","EU"],
+    "sectors": ["Digital/AI/Data/Space","Health/BioTech","Manufacturing/Industry 4.0","Climate/Energy","Creative/Media","Fintech/Industry 4.0"],
+    "budget_min_eur": 20000,
+    "budget_max_eur": 200000,
+    "cofund_min_percent": 0.30,
+    "trl_min": 2,
+    "trl_max": 6,
+    "deadline_iso": null,
+    "notes": "Non-dilutive grant for early-stage tech; Austria focus."
+  },
+  {
+    "id": "ffg_basis",
+    "name": "FFG Basisprogramm",
+    "jurisdictions": ["AT"],
+    "sectors": ["Digital/AI/Data/Space","Manufacturing/Industry 4.0","Climate/Energy","Health/BioTech"],
+    "budget_min_eur": 10000,
+    "budget_max_eur": 1000000,
+    "cofund_min_percent": 0.35,
+    "trl_min": 3,
+    "trl_max": 7,
+    "deadline_iso": null,
+    "notes": "Open call; continuous submission; typical co-funding ~50%."
+  },
+  {
+    "id": "eic_accel",
+    "name": "EU EIC Accelerator",
+    "jurisdictions": ["EU"],
+    "sectors": ["Digital/AI/Data/Space","Health/BioTech","Climate/Energy","Manufacturing/Industry 4.0"],
+    "budget_min_eur": 2500000,
+    "budget_max_eur": 15000000,
+    "cofund_min_percent": 0.0,
+    "trl_min": 5,
+    "trl_max": 9,
+    "deadline_iso": "2025-10-01",
+    "notes": "Blended finance; strict TRL & impact requirements."
+  },
+  {
+    "id": "creative_europe_media",
+    "name": "Creative Europe — MEDIA",
+    "jurisdictions": ["EU"],
+    "sectors": ["Creative/Media"],
+    "budget_min_eur": 30000,
+    "budget_max_eur": 200000,
+    "cofund_min_percent": 0.20,
+    "trl_min": 2,
+    "trl_max": 6,
+    "deadline_iso": null,
+    "notes": "Audiovisual content support; cultural objectives."
+  },
+  {
+    "id": "horizon_ria",
+    "name": "Horizon Europe — RIA",
+    "jurisdictions": ["EU"],
+    "sectors": ["Digital/AI/Data/Space","Health/BioTech","Climate/Energy","Manufacturing/Industry 4.0"],
+    "budget_min_eur": 500000,
+    "budget_max_eur": 3000000,
+    "cofund_min_percent": 0.0,
+    "trl_min": 2,
+    "trl_max": 5,
+    "deadline_iso": "2025-12-31",
+    "notes": "Research & Innovation Action; consortium-based."
+  }
+]

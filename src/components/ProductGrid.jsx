@@ -1,0 +1,5 @@
+﻿import React from "react"; import Badge from "./Badge"; import Reveal from "./Reveal"; import { useI18n } from "../lib/i18n";
+function Card({title,body,ideal}){ return (<div className="card" style={{display:"flex",flexDirection:"column",gap:12}}><h3 style={{margin:"0 0 6px",fontSize:"var(--fs-xl)"}}>{title}</h3><p style={{color:"var(--color-fg-muted)"}}>{body}</p>{ideal && <Badge>{ideal}</Badge>}</div>) }
+export default function ProductGrid(){ const { t } = useI18n(); const cards=[{title:t("landing.offers.customPlanTitle"),body:t("landing.offers.customPlanBody"),ideal:t("landing.offers.ideal.custom")},{title:t("landing.offers.upgradeTitle"),body:t("landing.offers.upgradeBody"),ideal:t("landing.offers.ideal.upgrade")},{title:t("landing.offers.strategyTitle"),body:t("landing.offers.strategyBody"),ideal:t("landing.offers.ideal.strategy")}];
+  return (<section className="section"><div className="container"><Reveal><div style={{display:"grid",gridTemplateColumns:"repeat(3,1fr)",gap:24}}>{cards.map((c,i)=>(<Card key={i} {...c}/>))}</div></Reveal></div></section>);
+}

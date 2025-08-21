@@ -1,0 +1,42 @@
+﻿[
+  {
+    "id": "aws_preseed",
+    "name": "AWS PreSeed",
+    "agency": "aws",
+    "cofundMin": 0.2,
+    "sectors": ["AI","SaaS","DeepTech"],
+    "keywords": ["prototype","mvp","innovation","startup"],
+    "links": ["https://www.aws.at/foerderungen/seedfinancing/"],
+    "corpus": { "sources": ["https://www.aws.at"] }
+  },
+  {
+    "id": "ffg_basis",
+    "name": "FFG Basisprogramm",
+    "agency": "ffg",
+    "cofundMin": 0.3,
+    "sectors": ["AI","Industry","Hardware","Software"],
+    "keywords": ["research","development","R&D","market"],
+    "links": ["https://www.ffg.at/basisprogramm"],
+    "corpus": { "sources": ["https://www.ffg.at"] }
+  },
+  {
+    "id": "eic_accel",
+    "name": "EIC Accelerator",
+    "agency": "EU",
+    "cofundMin": 0.3,
+    "sectors": ["AI","BioTech","Climate"],
+    "keywords": ["disruptive","deep tech","scale","eu"],
+    "links": ["https://eic.ec.europa.eu/"],
+    "corpus": { "sources": ["https://eic.ec.europa.eu/"] }
+  },
+  {
+    "id": "ams_founder",
+    "name": "AMS Gr??nder",
+    "agency": "AMS",
+    "cofundMin": 0.0,
+    "sectors": ["Services","Any","AI"],
+    "keywords": ["self employment","founder","ams"],
+    "links": ["https://www.ams.at/"],
+    "corpus": { "sources": ["https://www.ams.at/"] }
+  }
+]

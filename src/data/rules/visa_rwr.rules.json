@@ -1,0 +1,59 @@
+{
+  "programId": "visa_rwr",
+  "programName": "Visa / RWR",
+  "requiredKeys": [
+    "country",
+    "business_viable",
+    "revenue_projection_ok",
+    "no_criminal_record",
+    "health_insurance",
+    "financial_means_ok"
+],
+  "criteria": [
+    {
+        "weight":  0.1,
+        "key":  "country",
+        "op":  "equals",
+        "value":  "AT",
+        "reason":  "Business activity in AT"
+    },
+    {
+        "weight":  0.25,
+        "key":  "business_viable",
+        "op":  "equals",
+        "value":  true,
+        "reason":  "Viable business model"
+    },
+    {
+        "weight":  0.2,
+        "key":  "revenue_projection_ok",
+        "op":  "equals",
+        "value":  true,
+        "reason":  "Sustainable income projection"
+    },
+    {
+        "weight":  0.15,
+        "key":  "health_insurance",
+        "op":  "equals",
+        "value":  true,
+        "reason":  "Health insurance in place"
+    },
+    {
+        "weight":  0.2,
+        "key":  "financial_means_ok",
+        "op":  "equals",
+        "value":  true,
+        "reason":  "Sufficient means"
+    },
+    {
+        "weight":  0.1,
+        "key":  "no_criminal_record",
+        "op":  "equals",
+        "value":  true,
+        "reason":  "Compliance"
+    }
+],
+  "thresholds": { "eligible": 0.7, "discuss": 0.5 },
+  "version": "7",
+  "notes": "Internal heuristic scoring for recommendation and gating."
+}

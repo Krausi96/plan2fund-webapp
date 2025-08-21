@@ -1,0 +1,2 @@
+﻿import React from "react"; import Hero from "../components/Hero"; import ProductGrid from "../components/ProductGrid"; import FeatureList from "../components/FeatureList"; import Steps from "../components/Steps"; import CTABand from "../components/CTABand"; import Footer from "../components/Footer";
+export default function LandingShell(){ return (<div><Hero/><ProductGrid/><FeatureList/><Steps/><CTABand/><Footer/></div>); }

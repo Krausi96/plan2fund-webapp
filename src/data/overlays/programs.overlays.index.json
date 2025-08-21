@@ -1,0 +1,26 @@
+[
+    {
+        "id":  "aws_preseed",
+        "file":  "aws_preseed.overlay.json"
+    },
+    {
+        "id":  "ffg_basisprogramm",
+        "file":  "ffg_basisprogramm.overlay.json"
+    },
+    {
+        "id":  "eu_startup_call",
+        "file":  "eu_startup_call.overlay.json"
+    },
+    {
+        "id":  "visa_rwr",
+        "file":  "visa_rwr.overlay.json"
+    },
+    {
+        "id":  "ams_wko_basic",
+        "file":  "ams_wko_basic.overlay.json"
+    },
+    {
+        "id":  "bank_loan_leasing",
+        "file":  "bank_loan_leasing.overlay.json"
+    }
+]

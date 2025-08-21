@@ -1,0 +1,73 @@
+{
+  "programId": "ffg_basisprogramm",
+  "programName": "FFG Basisprogramm",
+  "requiredKeys": [
+    "country",
+    "project_type",
+    "innovation_level",
+    "trl",
+    "cofinancing_possible",
+    "project_budget_eur",
+    "economic_effect_at"
+],
+  "criteria": [
+    {
+        "weight":  0.15,
+        "key":  "country",
+        "op":  "equals",
+        "value":  "AT",
+        "reason":  "Project in Austria"
+    },
+    {
+        "weight":  0.2,
+        "key":  "project_type",
+        "op":  "one_of",
+        "value":  [
+                      "R\u0026D",
+                      "innovation"
+                  ],
+        "reason":  "R\u0026D/innovation project"
+    },
+    {
+        "weight":  0.15,
+        "key":  "innovation_level",
+        "op":  "gte",
+        "value":  0.6,
+        "reason":  "Sufficient innovation"
+    },
+    {
+        "weight":  0.15,
+        "key":  "trl",
+        "op":  "between",
+        "value":  [
+                      3,
+                      7
+                  ],
+        "reason":  "TRL 3-7"
+    },
+    {
+        "weight":  0.15,
+        "key":  "cofinancing_possible",
+        "op":  "equals",
+        "value":  true,
+        "reason":  "Co-financing"
+    },
+    {
+        "weight":  0.1,
+        "key":  "project_budget_eur",
+        "op":  "gte",
+        "value":  100000,
+        "reason":  "Adequate budget"
+    },
+    {
+        "weight":  0.1,
+        "key":  "economic_effect_at",
+        "op":  "equals",
+        "value":  true,
+        "reason":  "Economic effect in AT"
+    }
+],
+  "thresholds": { "eligible": 0.7, "discuss": 0.5 },
+  "version": "7",
+  "notes": "Internal heuristic scoring for recommendation and gating."
+}

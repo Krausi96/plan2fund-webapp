@@ -1,0 +1,4 @@
+[
+  {"name":"AT MVP AI 300k","input":{"jurisdiction":"EU","country":"AT","stage":"mvp","trl":5,"sector":"Digital/AI/Data/Space","request_eur":300000,"cofin_percent":0.3}},
+  {"name":"Too small budget","input":{"jurisdiction":"EU","stage":"idea","trl":2,"sector":"Digital/AI/Data/Space","request_eur":5000,"cofin_percent":0}}
+]
