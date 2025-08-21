@@ -1,7 +1,8 @@
-﻿import "./lib/celebrate.js";
-import "./lib/header.mount.jsx";
+﻿import "../design/theme.css";
 import "../design/motion.css";
-import "../design/theme.css";
+import "./lib/header.mount.jsx";
+import "./lib/celebrate.js";
+import "./landing.boot.jsx";
 // src/main.jsx — dynamic, Vercel-safe entry (no hard dev imports)
 import React, { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
@@ -47,11 +48,5 @@ const path = clean(window.location.pathname);
     createRoot(rootEl).render(<StrictMode><App /></StrictMode>);
   }
 })();
-
-
-
-
-
-
 
 
