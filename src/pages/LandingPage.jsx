@@ -1,8 +1,13 @@
 import React from "react";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
+
 import Hero from "../components/Hero";
+import Intro from "../components/Intro";
 import UseCases from "../components/UseCases";
-import Included from "../components/Included";
-import Offers from "../components/Offers";
+import Products from "../components/Products";
+import HowItWorks from "../components/HowItWorks";
+import Numbers from "../components/Numbers";
 
 import "../design/tokens.css";
 import "../design/base.css";
@@ -12,32 +17,31 @@ import "../design/motion.css";
 export default function LandingPage() {
   return (
     <>
-      <Hero />
+      <Header />
+      <main>
+        <Hero />
 
-      <section className="section white">
-        <h2 className="text-center">Our Offer</h2>
-        <div className="product-grid">
-          <Offers />
-        </div>
-        <div className="text-center mt-8">
-          <a href="/reco" className="btn btn-primary">Get Recommendations</a>
-          <a href="/plan" className="btn btn-secondary ml-4">Start Planning</a>
-        </div>
-      </section>
+        <section className="section light border-top">
+          <Intro />
+        </section>
 
-      <section className="section white">
-        <Included />
-      </section>
+        <section className="section white border-top">
+          <UseCases />
+        </section>
 
-      <section className="section light">
-        <UseCases />
-      </section>
+        <section className="section light border-top">
+          <Products />
+        </section>
 
-      <div className="text-center mt-12">
-        <a href="/reco" className="btn btn-primary">Get Recommendations</a>
-        <a href="/plan" className="btn btn-secondary ml-4">Start Planning</a>
-      </div>
+        <section className="section white border-top">
+          <HowItWorks />
+        </section>
+
+        <section className="section light border-top">
+          <Numbers />
+        </section>
+      </main>
+      <Footer />
     </>
   );
 }
-
