@@ -1,14 +1,22 @@
-
 import React from "react";
-import { useI18n } from "../lib/i18n.js";
-export default function UseCases(){
-  const { t } = useI18n();
-  const items = t("usecases.items", []);
+
+export default function UseCases() {
   return (
-    <section className="section">
-      <div className="container">
-        <h2 style={{marginTop:0}}>{t("usecases.title")}</h2>
-        <div className="grid">{items.map((it,i)=>(<div key={i} className="card">{it}</div>))}</div>
+    <section>
+      <h2 className="text-center mb-8">Use Cases</h2>
+      <div className="card-grid">
+        <div className="card">
+          <h3>For Startups</h3>
+          <p>Discover grants and programs tailored for early-stage companies.</p>
+        </div>
+        <div className="card">
+          <h3>For Researchers</h3>
+          <p>Find funding opportunities across universities and institutions.</p>
+        </div>
+        <div className="card">
+          <h3>For SMEs</h3>
+          <p>Access EU and local funding options to grow sustainably.</p>
+        </div>
       </div>
     </section>
   );

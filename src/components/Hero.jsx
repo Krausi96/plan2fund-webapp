@@ -1,20 +1,22 @@
-
 import React from "react";
-import Orbs from "./Orbs.jsx";
-import Reveal from "./Reveal.jsx";
-import { useI18n } from "../lib/i18n.js";
 
-export default function Hero(){
-  const { t } = useI18n();
+export default function Hero() {
   return (
-    <section className="section" style={{position:"relative",padding:"84px 0 24px"}}>
-      <Orbs/>
-      <div className="container">
-        <span className="badge reveal">{t("hero.eyebrow")}</span>
-        <h1 className="hero-title reveal">{t("hero.title")}</h1>
-        <p className="hero-sub reveal">{t("value.line1")}</p>
-        <p className="hero-note reveal">{t("value.line2")}</p>
+    <section className="hero">
+      <div className="hero-bg">
+        <div className="orbs"></div>
+      </div>
+      <div className="hero-inner text-center">
+        <h1 className="hero-title">Plan Smarter, Fund Faster</h1>
+        <p className="hero-sub">
+          The platform that helps you discover, compare, and plan funding opportunities with clarity.
+        </p>
+        <div className="hero-cta">
+          <a href="/reco" className="btn btn-primary">Get Recommendations</a>
+          <a href="/plan" className="btn btn-secondary ml-4">Start Planning</a>
+        </div>
       </div>
     </section>
   );
 }
+
