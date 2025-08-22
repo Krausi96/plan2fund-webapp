@@ -1,0 +1,63 @@
+﻿/* === HOTFIX: final unified polish === */
+*{box-sizing:border-box}
+html,body,#root{height:100%}
+body{margin:0;background:#0b0f14;color:#eaf1fa;font:16px/1.5 Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
+a,a:visited{color:#9ecbff;text-decoration:none} a:hover{opacity:.9}
+.container{max-width:1120px;margin:0 auto;padding:24px}
+.muted{color:#a7b3c6}
+
+/* Header */
+.site-header{position:sticky;top:0;z-index:50;border-bottom:1px solid rgba(255,255,255,.08);
+  backdrop-filter:saturate(120%) blur(8px);background:rgba(11,15,20,.8)}
+.header-row{display:flex;align-items:center;justify-content:space-between;height:64px}
+.brand{font-weight:800;letter-spacing:.2px;color:#eaf1fa}
+.nav{display:flex;gap:18px} .nav a{opacity:.9} .nav a.active{opacity:1}
+
+/* Footer */
+.site-footer{border-top:1px solid rgba(255,255,255,.08);background:#0b0f14}
+.footer-grid{display:grid;gap:16px;grid-template-columns:2fr 1fr 1fr;align-items:start}
+.footer-grid .links{display:grid;gap:6px}
+
+/* Buttons */
+.btn{display:inline-flex;align-items:center;gap:8px;padding:12px 16px;border-radius:14px;
+  border:1px solid rgba(255,255,255,.15);background:transparent;color:#eaf1fa;cursor:pointer}
+.btn.primary{background:linear-gradient(90deg,#4da3ff,#7bc4ff);border:0;color:#06101a;font-weight:600}
+.btn:focus{outline:none;box-shadow:0 0 0 3px rgba(77,163,255,.32)} .cta-row{display:flex;gap:10px;margin-top:18px}
+.cta-row.center{justify-content:center}
+
+/* Hero */
+.hero{position:relative;isolation:isolate;border-radius:28px;margin:16px 0 28px;background:linear-gradient(180deg,#10161f,#0b0f14)}
+.hero-content{padding:96px 32px}
+.hero .badge{display:inline-flex;gap:8px;align-items:center;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);
+  color:#a7b3c6;padding:6px 12px;border-radius:999px;font-size:12px}
+.hero-title{font-size:64px;line-height:1.06;letter-spacing:-.02em;margin:12px 0 12px;color:#fff}
+.hero-sub{max-width:780px;color:#a7b3c6;font-size:18px}
+.hero::before,.hero::after{content:"";position:absolute;inset:-20%;pointer-events:none}
+.hero::before{background:
+  radial-gradient(420px 300px at 80% -10%, rgba(123,196,255,.25), transparent 60%),
+  radial-gradient(280px 220px at 12% 20%, rgba(169,255,239,.16), transparent 65%)}
+.hero::after{background:radial-gradient(2px 2px at 20% 30%, rgba(255,255,255,.12) 0 60%, transparent 61%) repeat;
+  mix-blend-mode:screen;opacity:.22;transform:translateZ(0)}
+@media (prefers-reduced-motion: no-preference){
+  .hero::after{animation:drift 36s linear infinite}
+  @keyframes drift{0%{transform:translate3d(0,0,0)}50%{transform:translate3d(-1%,1%,0)}100%{transform:translate3d(0,0,0)}}
+}
+.hero > *{position:relative;z-index:1}
+
+/* Sections + Cards */
+.section{padding:28px 0}
+.section.light{background:#ffffff;color:#0b0f14}
+.section-h{font-size:22px;margin:6px 0 14px}
+.grid{display:grid;gap:18px} .grid-cols-3{grid-template-columns:repeat(3,minmax(0,1fr))}
+.card{background:linear-gradient(180deg,#121a24,#0f141b);border:1px solid rgba(255,255,255,.08);
+  border-radius:18px;padding:20px;box-shadow:0 8px 24px rgba(0,0,0,.28)}
+.card strong{display:block;margin-bottom:6px;font-size:16px;color:#eaf1fa}
+.card.clickable{transition:transform .2s ease, border-color .2s ease, box-shadow .2s ease}
+.card.clickable:hover{transform:translateY(-2px);border-color:rgba(123,196,255,.4);box-shadow:0 10px 32px rgba(0,0,0,.4)}
+.card.light{background:#fff;border:1px solid rgba(0,0,0,.08);box-shadow:0 6px 18px rgba(0,0,0,.06)}
+.card.light strong{color:#0b0f14}
+.muted.dark{color:#3b495a}
+
+/* Checklist */
+.checklist{display:grid;gap:10px;margin:8px 0 4px;padding:0;list-style:none}
+.checklist .check{display:inline-flex;width:22px;justify-content:center;font-weight:700;color:#2ecc71}
