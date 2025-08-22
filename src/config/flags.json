@@ -1,5 +1,6 @@
 ﻿{
     "ANIMATION_ENABLED":  true,
+    "CHECKOUT_ENABLED":  false,
     "CONSENT_GRANTED":  false,
     "DESIGN_SYSTEM_ENABLED":  true,
     "I18N_ENABLED":  true

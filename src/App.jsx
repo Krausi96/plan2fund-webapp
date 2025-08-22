@@ -1,4 +1,5 @@
-﻿import "../design/theme.css";
+﻿import "./lib/breadcrumbs.mount.jsx";
+import "../design/theme.css";
 import "../design/motion.css";
 import "./lib/header.mount.jsx";
 import "./lib/celebrate.js";
@@ -41,5 +42,9 @@ export default function App(){
     </div>
   );
 }
+
+
+
+
 
 

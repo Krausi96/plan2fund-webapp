@@ -1,7 +1,7 @@
 ﻿{
     "last_shift":  {
-                       "date":  "2025-08-21 17:22:25",
-                       "name":  "UI quick fix",
-                       "notes":  "Imports injected; welcome route removed."
+                       "date":  "2025-08-21 18:55:01",
+                       "name":  "User Journey Shift",
+                       "notes":  "Landing rebuilt with personas and legal; header/footer; mounts via main.jsx."
                    }
 }

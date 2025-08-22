@@ -14,3 +14,36 @@
 - Injected global design imports and header/celebrate hooks
 - Replaced '/welcome' with '/reco' routes
 
+## User Journey Shift â€” 2025-08-21 18:51:29
+- Stripe-style landing applied: Hero â†’ Offers â†’ Use Cases â†’ Included â†’ Persona bar â†’ Steps â†’ Choose path â†’ CTA â†’ Footer
+- Header: Logo â€¢ Personal â€¢ Organisations â€¢ Build your Freedom â€¢ Language (EN/DE/ES/FR)
+- Footer: Contact â€¢ Terms & Conditions â€¢ Data Privacy â€¢ Legal Notice â€¢ Â©2025
+- Breadcrumbs mounted on inner pages; header hidden on landing
+- Celebrations on purchase/download/export; legal public pages added
+- Flags updated: DESIGN_SYSTEM_ENABLED, ANIMATION_ENABLED, I18N_ENABLED = true; CONSENT_GRANTED=false; CHECKOUT_ENABLED=false
+- Files changed:
+  - src\config\flags.json
+  - src\main.jsx
+  - src\App.jsx
+## User Journey Shift â€” 2025-08-21 18:52:35
+- Stripe-style landing applied: Hero â†’ Offers â†’ Use Cases â†’ Included â†’ Persona bar â†’ Steps â†’ Choose path â†’ CTA â†’ Footer
+- Header: Logo â€¢ Personal â€¢ Organisations â€¢ Build your Freedom â€¢ Language (EN/DE/ES/FR)
+- Footer: Contact â€¢ Terms & Conditions â€¢ Data Privacy â€¢ Legal Notice â€¢ Â©2025
+- Breadcrumbs mounted on inner pages; header hidden on landing
+- Celebrations on purchase/download/export; legal public pages added
+- Flags updated: DESIGN_SYSTEM_ENABLED, ANIMATION_ENABLED, I18N_ENABLED = true; CONSENT_GRANTED=false; CHECKOUT_ENABLED=false
+- Files changed:
+  - src\config\flags.json
+  - src\main.jsx
+  - src\App.jsx
+## User Journey Shift â€” 2025-08-21 18:55:01
+- Stripe-style landing applied: Hero â†’ Offers â†’ Use Cases â†’ Included â†’ Persona bar â†’ Steps â†’ Choose path â†’ CTA â†’ Footer
+- Header: Logo â€¢ Personal â€¢ Organisations â€¢ Build your Freedom â€¢ Language (EN/DE/ES/FR)
+- Footer: Contact â€¢ Terms & Conditions â€¢ Data Privacy â€¢ Legal Notice â€¢ Â©2025
+- Breadcrumbs mounted on inner pages; header hidden on landing
+- Celebrations on purchase/download/export; legal public pages added
+- Flags updated: DESIGN_SYSTEM_ENABLED, ANIMATION_ENABLED, I18N_ENABLED = true; CONSENT_GRANTED=false; CHECKOUT_ENABLED=false
+- Files changed:
+  - src\config\flags.json
+  - src\main.jsx
+  - src\App.jsx

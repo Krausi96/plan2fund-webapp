@@ -1,5 +1,4 @@
-
-param([switch]$Apply=$false)
+﻿param([switch]$Apply=$false)
 Set-StrictMode -Version Latest
 $ErrorActionPreference = 'Stop'
 
@@ -18,25 +17,34 @@ $repo = (Get-Location).Path
 $changed=@()
 
 function Stage($rel){
-  $from = Join-Path $PSScriptRoot $rel
+  # Go one level up from /tools into repo root
+  $from = Join-Path (Join-Path $PSScriptRoot "..") $rel
   $to   = Join-Path $repo $rel
-  $content = Get-Content -LiteralPath $from -Raw -Encoding UTF8
-  if(Write-IfDifferent $to $content){ $script:changed += $rel }
+
+  if (Test-Path $from) {
+    $content = Get-Content -LiteralPath $from -Raw -Encoding UTF8
+    if (Write-IfDifferent $to $content) { 
+      $script:changed += $rel 
+    }
+  } else {
+    Write-Warning "Missing source file: $from"
+  }
 }
 
 # Stage design
-Stage "design\theme.css"
-Stage "design\motion.css"
+Stage "src\design\theme.css"
+Stage "src\design\motion.css"
 
 # i18n + lib
-Stage "i18n\en.json"
-Stage "i18n\de.json"
-Stage "i18n\es.json"
-Stage "i18n\fr.json"
+Stage "src\i18n\en.json"
+Stage "src\i18n\de.json"
+Stage "src\i18n\es.json"
+Stage "src\i18n\fr.json"
 Stage "src\lib\i18n.js"
 Stage "src\lib\header.mount.jsx"
 Stage "src\lib\celebrate.js"
 Stage "src\lib\breadcrumbs.mount.jsx"
+
 
 # components + shell
 foreach($f in @("Header.jsx","LangSwitch.jsx","Footer.jsx","Orbs.jsx","Reveal.jsx","Hero.jsx","UseCases.jsx","Offers.jsx","Included.jsx","PersonaBar.jsx","Steps.jsx","ChoosePath.jsx","CTABand.jsx")){
@@ -81,10 +89,10 @@ foreach($ep in $entries){
 $ts = Get-Date -Format "yyyy-MM-dd HH:mm:ss"
 $mr = Join-Path $repo "MIGRATION_REPORT.md"
 $entry = @"
-## User Journey Shift — $ts
-- Stripe-style landing applied: Hero → Offers → Use Cases → Included → Persona bar → Steps → Choose path → CTA → Footer
-- Header: Logo • Personal • Organisations • Build your Freedom • Language (EN/DE/ES/FR)
-- Footer: Contact • Terms & Conditions • Data Privacy • Legal Notice • ©2025
+## User Journey Shift â€” $ts
+- Stripe-style landing applied: Hero â†’ Offers â†’ Use Cases â†’ Included â†’ Persona bar â†’ Steps â†’ Choose path â†’ CTA â†’ Footer
+- Header: Logo â€¢ Personal â€¢ Organisations â€¢ Build your Freedom â€¢ Language (EN/DE/ES/FR)
+- Footer: Contact â€¢ Terms & Conditions â€¢ Data Privacy â€¢ Legal Notice â€¢ Â©2025
 - Breadcrumbs mounted on inner pages; header hidden on landing
 - Celebrations on purchase/download/export; legal public pages added
 - Flags updated: DESIGN_SYSTEM_ENABLED, ANIMATION_ENABLED, I18N_ENABLED = true; CONSENT_GRANTED=false; CHECKOUT_ENABLED=false
@@ -103,3 +111,4 @@ $npm = Get-Command npm -ErrorAction SilentlyContinue
 if($npm){ npm run build } else { Write-Warning "npm not found; skipping build." }
 
 Write-Host "DONE"
+
