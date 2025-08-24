@@ -100,3 +100,41 @@ body { -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; 
   .pf-hero .pf-hero-wrap{ padding: 88px 16px 56px; }
   .pf-nav{ display:none; } /* cleaner mobile header without adding deps */
 }
+/* PATCH: POLISH v2 */
+.pf-header{ background: linear-gradient(180deg, rgba(14,14,18,0.75), rgba(14,14,18,0.35)); box-shadow: 0 1px 0 rgba(255,255,255,0.06); }
+.pf-header-inner{ max-width: 1200px; }
+.pf-nav a{ padding:10px 14px; border-radius:12px; }
+
+.pf-hero{
+  background:
+    radial-gradient(1200px 700px at 12% -10%, #1f1c4d 0%, transparent 60%),
+    radial-gradient(900px 500px at 95% 0%, #0ea5e9 0%, transparent 55%),
+    linear-gradient(180deg, #0b0b10 0%, #0b0b10 100%);
+}
+.pf-hero .pf-hero-wrap{ padding: 128px 20px 84px; }
+.pf-hero h1{ font-size: clamp(40px, 6.8vw, 64px); line-height:1.06; letter-spacing:-0.02em; text-shadow: 0 2px 24px rgba(0,0,0,.35); }
+.pf-hero p{ max-width: 820px; }
+
+.pf-btn{ padding:13px 18px; border-radius:14px; font-weight:600; }
+.pf-btn.primary{ box-shadow: 0 8px 30px rgba(14,165,233,0.25); }
+
+.pf-section{ padding: 60px 20px; border-top:1px solid var(--pf-line); background: linear-gradient(180deg, rgba(255,255,255,0.00), rgba(255,255,255,0.01)); }
+.pf-card{ border-radius: 20px; box-shadow: 0 12px 28px rgba(0,0,0,.22); }
+.pf-card h3{ letter-spacing:-0.01em; }
+
+.pf-trust-grid{ display:grid; grid-template-columns: repeat(4,minmax(140px,1fr)); gap: 18px; align-items:center; }
+.pf-trust-item{ display:flex; align-items:center; gap:10px; color:#cbd5e1; }
+.pf-trust-badge{ width:30px; height:30px; display:grid; place-items:center; border-radius:9px;
+  background: linear-gradient(135deg,#6366f1,#0ea5e9); color:#fff; font-weight:700; font-size:13px; }
+
+.pf-crumbs{ font-size:13px; margin-bottom:10px; color:#94a3b8; }
+.pf-crumbs a{ color:#cbd5e1; text-decoration:none; }
+.pf-crumb-sep{ display:inline-block; margin:0 8px; opacity:.6; }
+
+@media (max-width: 900px){
+  .pf-trust-grid{ grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 640px){
+  .pf-hero .pf-hero-wrap{ padding: 92px 16px 60px; }
+  .pf-nav{ display:none; }
+}

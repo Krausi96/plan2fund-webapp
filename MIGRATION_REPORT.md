@@ -97,3 +97,8 @@ Date: 2025-08-24 23:43:21 +02:00
 - Added TrustBar under hero (GDPR/EU/AT/No trackers).
 - Added Breadcrumbs and integrated into Reco + Plan.
 - CSS polish: typography scale, card shadow, trust grid, breadcrumb styles, mobile header simplification.
+### UI Polish v2
+Date: 2025-08-24 23:46:00 +02:00
+- TrustBar fixed: JSX unicode expressions (no literal \u text).
+- Hero/nav/cards/buttons/sections refined for Stripe/Revolut feel.
+- Added divider styling and improved typography scale.

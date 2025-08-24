@@ -4,7 +4,7 @@ export default function TrustBar(){
     <section className="pf-trust pf-section">
       <div className="pf-wrap pf-trust-grid">
         <div className="pf-trust-item" title="GDPR">
-          <div className="pf-trust-badge">GDPR</div><span>Compliant</span>
+          <div className="pf-trust-badge">GD</div><span>Compliant</span>
         </div>
         <div className="pf-trust-item" title="EU Programs">
           <div className="pf-trust-badge">EU</div><span>Horizon, EIC</span>
@@ -13,7 +13,7 @@ export default function TrustBar(){
           <div className="pf-trust-badge">AT</div><span>AWS, FFG</span>
         </div>
         <div className="pf-trust-item" title="No trackers">
-          <div className="pf-trust-badge">\u2713</div><span>No trackers</span>
+          <div className="pf-trust-badge">{'\u2713'}</div><span>No trackers</span>
         </div>
       </div>
     </section>
