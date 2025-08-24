@@ -40,20 +40,20 @@ export default function LandingPage() {
       </section>
 
       {/* Intro */}
-      <section className="section light border-top text-center" data-animate="fade-in">
-        <p>
+      <section className="section light border-top text-center animate-fade">
+        <p className="text-lg">
           Whether you’re shaping an idea, applying for funding or preparing a visa —
           we turn your thoughts, drafts or existing business into a submission &
           funding-ready Business Plan.
         </p>
-        <p className="mt-4">
+        <p className="mt-4 text-lg">
           Built to meet standards of institutions, banks & public funding programs
           nationally & internationally.
         </p>
       </section>
 
       {/* Use Cases */}
-      <section className="section white border-top text-center">
+      <section className="section white border-top text-center animate-up">
         <h2>Use Cases</h2>
         <div className="card-grid">
           <div className="card">
@@ -72,7 +72,7 @@ export default function LandingPage() {
       </section>
 
       {/* Products */}
-      <section className="section light border-top text-center">
+      <section className="section light border-top text-center animate-fade">
         <h2>Products</h2>
         <div className="card-grid">
           <div className="card">
@@ -95,7 +95,7 @@ export default function LandingPage() {
       </section>
 
       {/* How It Works */}
-      <section className="section white border-top text-center" data-animate="slide-up">
+      <section className="section white border-top text-center animate-up">
         <h2>How It Works</h2>
         <ol className="checklist max-w-2xl mx-auto">
           <li>Input your idea ? corpus-driven plan</li>
@@ -105,13 +105,13 @@ export default function LandingPage() {
       </section>
 
       {/* Advantages */}
-      <section className="section light border-top text-center" data-animate="fly-in">
+      <section className="section light border-top text-center animate-fly">
         <h2>Global Impact</h2>
         <div className="grid grid-cols-2 gap-8 max-w-3xl mx-auto">
           <div><strong>500M+</strong><p>Funding opportunities indexed</p></div>
           <div><strong>135+</strong><p>Countries supported</p></div>
         </div>
-        <div className="globe-placeholder mt-8">?? [Globe Animation]</div>
+        <div className="globe-placeholder mt-8">?? [Globe Animation Placeholder]</div>
       </section>
 
       <Footer />
