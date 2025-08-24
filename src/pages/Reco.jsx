@@ -3,6 +3,7 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Card from "../components/Card";
 import Badge from "../components/Badge";
+import Breadcrumbs from "../components/Breadcrumbs";
 import data from "../data/programs.local.json";
 
 export default function Reco(){
@@ -23,10 +24,11 @@ export default function Reco(){
       <Header/>
       <section className="pf-section">
         <div className="pf-wrap">
-          <h2 style={{marginTop:0}}>Find Funding</h2>
+          <Breadcrumbs trail={[{label:"Home",href:"/"},{label:"Find Funding"}]}/>
+          <h2 style={{marginTop:8}}>Find Funding</h2>
           <div className="pf-grid">
             <div className="pf-card">
-              <label>Idea<br/><input value={idea} onChange={e=>setIdea(e.target.value)} style={{width:"100%"}}/></label>
+              <label>Idea<br/><textarea rows="3" value={idea} onChange={e=>setIdea(e.target.value)} style={{width:"100%"}}/></label>
               <div style={{height:8}}/>
               <label>Sector<br/><input value={sector} onChange={e=>setSector(e.target.value)} style={{width:"100%"}}/></label>
               <div style={{height:8}}/>

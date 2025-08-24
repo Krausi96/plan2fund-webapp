@@ -75,3 +75,28 @@ body { -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; 
 .pf-hero .pf-hero-wrap { padding: 110px 20px 72px; }
 .pf-hero h1 { font-size: clamp(36px, 6.5vw, 60px); line-height: 1.08; }
 .pf-emoji { opacity: .35; }
+/* PATCH: POLISH v1 (hero/typography/trust/breadcrumbs) */
+:root{
+  --pf-maxw: 1120px;
+}
+.pf-wrap{ max-width: var(--pf-maxw); }
+.pf-hero .pf-hero-wrap{ padding: 120px 20px 76px; }
+.pf-hero h1{ letter-spacing:-0.015em; text-shadow: 0 2px 20px rgba(0,0,0,0.35); }
+.pf-nav a{ font-size:14px; }
+
+.pf-trust-grid{ display:grid; grid-template-columns: repeat(auto-fit,minmax(180px,1fr)); gap: 16px; }
+.pf-trust-item{ display:flex; align-items:center; gap:10px; color:#cbd5e1; }
+.pf-trust-badge{ width:28px; height:28px; display:grid; place-items:center; border-radius:8px;
+  background: linear-gradient(135deg,#6366f1,#0ea5e9); color:#fff; font-weight:700; }
+
+.pf-crumbs{ font-size:13px; margin-bottom:8px; color:#cbd5e1; }
+.pf-crumbs a{ color:#cbd5e1; text-decoration:none; }
+.pf-crumb-sep{ display:inline-block; margin:0 8px; opacity:.7; }
+
+.pf-card{ background: linear-gradient(180deg, rgba(255,255,255,0.045), rgba(255,255,255,0.02));
+  box-shadow: 0 6px 28px rgba(0,0,0,0.22); }
+
+@media (max-width: 640px){
+  .pf-hero .pf-hero-wrap{ padding: 88px 16px 56px; }
+  .pf-nav{ display:none; } /* cleaner mobile header without adding deps */
+}

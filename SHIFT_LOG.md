@@ -3,3 +3,4 @@
 2025-08-24 23:32:31 +02:00  |  Reco.jsx patched to static import
 2025-08-24 23:36:58 +02:00  |  UI patch: ASCII-safe hero + spacing
 2025-08-24 23:39:23 +02:00  |  UI patch: Hero.jsx rewritten with \\u escapes; hero CSS overrides
+2025-08-24 23:43:21 +02:00  |  UI polish v1: hero unicode fix, trust bar, breadcrumbs, css spacing

@@ -91,3 +91,9 @@ Date: 2025-08-24 23:36:58 +02:00
 Date: 2025-08-24 23:39:23 +02:00
 - Rewrote src/components/Hero.jsx with \u escapes for dash/bullets/emojis.
 - Added CSS overrides block (marker: PATCH: HERO-OVERRIDES) for spacing/contrast.
+### UI Polish v1
+Date: 2025-08-24 23:43:21 +02:00
+- Fixed literal \u codes in Hero (JSX expressions) + improved hero spacing.
+- Added TrustBar under hero (GDPR/EU/AT/No trackers).
+- Added Breadcrumbs and integrated into Reco + Plan.
+- CSS polish: typography scale, card shadow, trust grid, breadcrumb styles, mobile header simplification.

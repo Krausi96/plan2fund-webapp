@@ -4,13 +4,13 @@ import Footer from "../components/Footer";
 import Card from "../components/Card";
 import Meter from "../components/Meter";
 import PreviewModal from "../components/PreviewModal";
+import Breadcrumbs from "../components/Breadcrumbs";
 
 export default function Plan(){
   const [form,setForm] = useState({idea:"",sector:"",team:"",financials:""});
   const [preview,setPreview] = useState(false);
   const completeness = Math.round((["idea","sector","team","financials"].filter(k=>form[k]?.length>2).length/4)*100);
   const complexity = Math.min(100, Math.round((form.idea.length + form.financials.length)/20));
-
   const onChange = (k)=>(e)=>setForm(f=>({...f,[k]:e.target.value}));
 
   return (
@@ -18,7 +18,8 @@ export default function Plan(){
       <Header/>
       <section className="pf-section">
         <div className="pf-wrap">
-          <h2 style={{marginTop:0}}>Business Plan Generator</h2>
+          <Breadcrumbs trail={[{label:"Home",href:"/"},{label:"Generate Plan"}]}/>
+          <h2 style={{marginTop:8}}>Business Plan Generator</h2>
           <div className="pf-grid">
             <Card title="Inputs">
               <label>Idea<br/><textarea rows="3" value={form.idea} onChange={onChange("idea")} style={{width:"100%"}}/></label>
