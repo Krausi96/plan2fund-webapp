@@ -1,21 +1,15 @@
 import React from "react";
-export default function Header(){
-  const links = [
-    {label:"Pricing", href:"/preview"},
-    {label:"Examples", href:"/#examples"},
-    {label:"Contact", href:"/#contact"},
-    {label:"GDPR", href:"/legal"}
-  ];
+
+export default function Header() {
   return (
-    <header className="pf-header">
-      <div className="pf-header-inner">
-        <a href="/" className="pf-brand" aria-label="Plan2Fund Home">
-          <div className="pf-brand-logo"></div><strong>Plan2Fund</strong>
-        </a>
-        <nav className="pf-nav">
-          {links.map(l => <a key={l.href} href={l.href}>{l.label}</a>)}
-        </nav>
-      </div>
+    <header className="header flex justify-between items-center px-6 py-3">
+      <div className="font-bold text-lg">Plan2Fund</div>
+      <nav className="flex gap-6 text-sm">
+        <a href="/pricing">Pricing</a>
+        <a href="/examples">Examples</a>
+        <a href="/contact">Contact</a>
+        <a href="/gdpr">GDPR</a>
+      </nav>
     </header>
   );
 }
