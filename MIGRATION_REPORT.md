@@ -80,3 +80,10 @@ Date: 2025-08-24 23:32:31 +02:00
 
 - Replaced runtime fetch('/src/data/programs.local.json') with static import '../data/programs.local.json'
 - Rationale: Vite serves /src differently; static import is dev+build safe and honors no-network rule.
+
+### Patch: ASCII-safe hero + spacing
+Date: 2025-08-24 23:36:58 +02:00
+- Replaced emojis with \\u codes
+- Normalized quotes/dash
+- Hero sizing/contrast tweaked
+
