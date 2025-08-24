@@ -11,18 +11,7 @@ import AfterSales from "./pages/AfterSales.jsx";
 import "./design/components.css";
 import "./design/motion.css";
 
-const routes = {
-  "/": Welcome,
-  "/index.html": Welcome,
-  "/welcome": Welcome,
-  "/reco": Reco,
-  "/plan": Plan,
-  "/preview": PreviewPricing,
-  "/confirm": Confirmation,
-  "/checkout": Checkout,
-  "/export": Export,
-  "/after": AfterSales
-};
+const routes = { "/":Welcome,"/index.html":Welcome,"/welcome":Welcome,"/reco":Reco,"/plan":Plan,"/preview":PreviewPricing,"/confirm":Confirmation,"/checkout":Checkout,"/export":Export,"/after":AfterSales };
 
 function mount(){
   const path = window.location.pathname.replace(/\/+$/,"") || "/";
@@ -30,15 +19,11 @@ function mount(){
   const rootEl = document.getElementById("root");
   createRoot(rootEl).render(<Comp/>);
 }
-
 window.addEventListener("popstate", mount);
 document.addEventListener("click", (e)=>{
-  const a = e.target.closest("a[href^='/']");
+  const a = e.target.closest && e.target.closest("a[href^='/']");
   if(a && (a.target==="" || a.target==="_self")){
-    e.preventDefault();
-    history.pushState({}, "", a.getAttribute("href"));
-    mount();
+    e.preventDefault(); history.pushState({}, "", a.getAttribute("href")); mount();
   }
 });
-
 mount();

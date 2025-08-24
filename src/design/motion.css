@@ -1,8 +1,6 @@
 /* ===== Plan2Fund ? Motion ===== */
-.pf-stagger { opacity:0; transform: translateY(8px); animation: pf-in .6s ease forwards; }
-.pf-stagger:nth-child(1){ animation-delay:.05s }
-.pf-stagger:nth-child(2){ animation-delay:.1s }
-.pf-stagger:nth-child(3){ animation-delay:.15s }
-.pf-stagger:nth-child(4){ animation-delay:.2s }
+.pf-stagger{ opacity:0; transform: translateY(8px); animation: pf-in .6s ease forwards; }
+.pf-stagger:nth-child(1){ animation-delay:.05s } .pf-stagger:nth-child(2){ animation-delay:.1s }
+.pf-stagger:nth-child(3){ animation-delay:.15s } .pf-stagger:nth-child(4){ animation-delay:.2s }
 .pf-stagger:nth-child(5){ animation-delay:.25s }
-@keyframes pf-in { to { opacity:1; transform:none } }
+@keyframes pf-in{ to{ opacity:1; transform:none } }

@@ -1,12 +1,9 @@
 import React, {useMemo} from "react";
 import TrustBar from "./TrustBar";
-
 export default function Hero(){
   const emojis = useMemo(()=>Array.from({length:18}).map((_,i)=>({
-    left: Math.random()*100,
-    delay: Math.random()*6,
-    dur: 7 + Math.random()*6,
-    char: Math.random()>0.5 ? '\uD83D\uDCB6' : '\uD83D\uDCC8' // ?? or ??
+    left: Math.random()*100, delay: Math.random()*6, dur: 7 + Math.random()*6,
+    char: Math.random()>0.5 ? '\uD83D\uDCB6' : '\uD83D\uDCC8'
   })),[]);
   return (
     <>

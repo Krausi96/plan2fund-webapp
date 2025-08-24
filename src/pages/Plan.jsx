@@ -35,11 +35,9 @@ export default function Plan(){
               </div>
             </Card>
             <Card title="Quality">
-              <div>Completeness</div>
-              <Meter value={completeness}/>
+              <div>Completeness</div><Meter value={completeness}/>
               <div style={{height:10}}/>
-              <div>Complexity</div>
-              <Meter value={complexity}/>
+              <div>Complexity</div><Meter value={complexity}/>
               <div style={{height:14}}/>
               <div style={{fontSize:12,opacity:.85}}>Program requirement overlays (stub)</div>
               <ul style={{fontSize:13}}>
@@ -53,14 +51,10 @@ export default function Plan(){
       </section>
       <PreviewModal open={preview} onClose={()=>setPreview(false)}>
         <div style={{padding:12}}>
-          <h3>Executive Summary</h3>
-          <p>{form.idea || "?"}</p>
-          <h3>Market & Sector</h3>
-          <p>{form.sector || "?"}</p>
-          <h3>Team</h3>
-          <p>{form.team || "?"}</p>
-          <h3>Financials</h3>
-          <p>{form.financials || "?"}</p>
+          <h3>Executive Summary</h3><p>{form.idea || "?"}</p>
+          <h3>Market & Sector</h3><p>{form.sector || "?"}</p>
+          <h3>Team</h3><p>{form.team || "?"}</p>
+          <h3>Financials</h3><p>{form.financials || "?"}</p>
         </div>
       </PreviewModal>
       <Footer/>

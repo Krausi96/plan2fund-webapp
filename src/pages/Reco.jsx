@@ -4,6 +4,7 @@ import Footer from "../components/Footer";
 import Card from "../components/Card";
 import Badge from "../components/Badge";
 import Breadcrumbs from "../components/Breadcrumbs";
+import flags from "../config/flags.json";
 import data from "../data/programs.local.json";
 
 export default function Reco(){
@@ -47,6 +48,11 @@ export default function Reco(){
                     {!p.eligible && p.unmet?.length>0 && (
                       <div style={{fontSize:12,opacity:.9}}>
                         <strong>Unmet:</strong> {p.unmet.join(", ")}
+                      </div>
+                    )}
+                    {flags.ELIGIBILITY_DEBUG && p.unmet?.length>0 && (
+                      <div style={{marginTop:6,fontSize:12,opacity:.8}}>
+                        <em>Debug:</em> missing ? {p.unmet.join(" ? ")}
                       </div>
                     )}
                   </div>

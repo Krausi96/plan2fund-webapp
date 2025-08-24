@@ -102,3 +102,11 @@ Date: 2025-08-24 23:46:00 +02:00
 - TrustBar fixed: JSX unicode expressions (no literal \u text).
 - Hero/nav/cards/buttons/sections refined for Stripe/Revolut feel.
 - Added divider styling and improved typography scale.
+### Design Reset ? Full Journey v1
+Date: 2025-08-24 23:54:16 +02:00
+
+- Unified header/nav, hero, sections, cards, buttons, forms, modal, badges/meters.
+- Added TrustBar + Breadcrumbs; standardized spacing & typography (system stack).
+- Wired full journey: Welcome ? Reco ? Plan ? Preview/Pricing ? Confirm ? Checkout (stub) ? Export (stub) ? After-Sales.
+- Flags used: checkout/docx exports disabled by default; eligibility debug on.
+- No new dependencies; router uses History API; build should remain GREEN.
