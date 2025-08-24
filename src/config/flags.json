@@ -1,7 +1,12 @@
-﻿{
-    "ANIMATION_ENABLED":  true,
-    "CHECKOUT_ENABLED":  false,
-    "CONSENT_GRANTED":  false,
-    "DESIGN_SYSTEM_ENABLED":  true,
-    "I18N_ENABLED":  true
+{
+  "DATA_SOURCE": "LOCAL",
+  "SUPABASE_ENABLED": false,
+  "ELIGIBILITY_ENABLED": true,
+  "CONFIDENCE_ENABLED": true,
+  "GATEKEEPER_STRICT": false,
+  "ELIGIBILITY_DEBUG": true,
+  "EDUCATION_UI_ENABLED": true,
+  "CHECKOUT_ENABLED": false,
+  "EXPORT_DOCX_ENABLED": false,
+  "TURNSTILE_ENABLED": false
 }

@@ -47,3 +47,31 @@
   - src\config\flags.json
   - src\main.jsx
   - src\App.jsx
+### Shift: Design-System Unify & Full Journey (Steps 1?10)
+Date: 2025-08-24 23:32:00 +02:00
+
+**Added/Updated**
+- src/design/components.css, motion.css ? unified visual system (glass header, hero, cards, buttons, badges, meters).
+- src/config/flags.json ? feature flags (checkout/export disabled by default).
+- src/data/programs.local.json ? local Top-5 placeholder corpus.
+- src/components/* ? Header, Footer, Hero, Card, Badge, Meter, PriceTiers, PreviewModal.
+- src/pages/* ? Welcome, Reco, Plan, PreviewPricing, Confirmation, Checkout, Export, AfterSales.
+- src/main.jsx ? dependency-free router; SPA navigation without external libs.
+- index.html ? ensured #root + script if missing.
+
+**User Journey**
+1) Welcome/Landing hero + sticky glass nav + trust.
+2) Choose path cards.
+3a) Recommendation inputs -> Top 5 results (scores, reasons; local corpus).
+3b) Plan generator with editable blocks + Preview.
+4) Eligibility/confidence badges (stubs) shown inside Reco + Plan quality panel.
+5) Preview + Pricing page with meter + tiers.
+6) AI Plan Machine banner (stub).
+7) Confirmation summary.
+8) Checkout (disabled via flags).
+9) Export (PDF/DOCX stubs; DOCX disabled via flags).
+10) After-sales request form (stub).
+
+**Build Guard**
+- No new deps; vanilla React + CSS.
+- Router uses History API; links intercepted to keep SPA.

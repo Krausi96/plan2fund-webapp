@@ -1,0 +1,10 @@
+{
+  "DESIGN_SYSTEM_ENABLED": true,
+  "ANIMATION_ENABLED": true,
+  "I18N_ENABLED": true,
+  "CONSENT_GRANTED": false,
+  "ELIGIBILITY_STRICT": false,
+  "CHECKOUT_ENABLED": false,
+  "EXPORT_DOCX": true,
+  "EXPORT_PDF": false
+}

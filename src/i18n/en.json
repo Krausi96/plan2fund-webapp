@@ -1,1 +1,64 @@
-﻿{ "brand":{"name":"Plan2Fund","tagline":"Freedom starts with a clear plan - let's build yours."} }
+{
+  "nav.home": "Home",
+  "cta.findFunding": "Find Funding",
+  "cta.generatePlan": "Generate Business Plan",
+  "landing": {
+    "hero": {
+      "eyebrow": "Plan2Fund",
+      "title": "Freedom starts with a clear plan — let’s build yours.",
+      "sub": "Generate investor- and authority‑ready documents and find matching funding — fast, clean and reusable."
+    },
+    "usecases": {
+      "title": "Use cases"
+    },
+    "cards": {
+      "funding": {
+        "title": "Find funding",
+        "desc": "Get curated programs for your stage, industry and location."
+      },
+      "plan": {
+        "title": "Generate business plan",
+        "desc": "Produce a structured, submission‑ready plan you can export and edit."
+      },
+      "templates": {
+        "title": "Just the templates",
+        "desc": "Start with clean templates for grants, visas, banks and more."
+      }
+    },
+    "offer": {
+      "title": "Our offer",
+      "basic": {
+        "title": "Starter Plan",
+        "desc": "AI‑assisted plan draft with export to Google Docs or Word."
+      },
+      "funding": {
+        "title": "Funding Pack",
+        "desc": "Plan draft + program shortlist tailored to your case."
+      },
+      "full": {
+        "title": "Full Pack",
+        "desc": "Everything above plus polishing and submission checklist."
+      },
+      "item": {
+        "structured": "Structured plan outline",
+        "export": "Export to Google Doc / Word",
+        "async": "Async delivery, no calls needed",
+        "shortlist": "Shortlist of matching programs",
+        "execsum": "1‑Page Executive Summary",
+        "revision": "1 free revision",
+        "nda": "Trust Agreement (NDA) on request",
+        "checklist": "Submission checklist",
+        "support": "Email support"
+      }
+    },
+    "included": {
+      "title": "What’s Included",
+      "item1": "A structured, submission-ready business plan or document",
+      "item2": "Delivered as Google Doc or Word (PDF optional, editable for reuse)",
+      "item3": "Includes a 1-Page Executive Summary that resumes your plan",
+      "item4": "A Trust Agreement (NDA) signed by us (optional)",
+      "item5": "Includes 1 free revision if your plan needs some adjustments",
+      "item6": "Async: No calls or meetings required. Nevertheless, you can reach me"
+    }
+  }
+}

@@ -1,4 +1,4 @@
-﻿// simple toast on purchase/download/export
+// simple toast on purchase/download/export
 export function celebrate(action = "done") {
   if (typeof window === "undefined") return;
   const el = document.createElement("div");

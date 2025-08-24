@@ -1,50 +1,37 @@
-﻿import "./lib/breadcrumbs.mount.jsx";
-import "../design/theme.css";
-import "../design/motion.css";
-import "./lib/header.mount.jsx";
-import "./lib/celebrate.js";
-import "./landing.boot.jsx";
-import { useState } from "react";
-import NavBar from "./components/NavBar";
-import LandingPage from "./pages/LandingPage";
-import Footer from "./components/Footer";
-import RecoPage from "./pages/RecoPage";
-import PlanPage from "./pages/PlanPage";
-import ResultsPage from "./pages/Results";
-import CheckoutPage from "./pages/Checkout";
-import AfterSales from "./pages/AfterSales";
+﻿import React from "react";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import "./design/theme.css";
+import "./design/motion.css";
+import "./design/hotfix-final.css";
+import AppShell from "./components/layout/AppShell.jsx";
+import LandingPage from "./pages/LandingPage.jsx";
+import RecoPage from "./pages/RecoPage.jsx";
+import Results from "./pages/Results.jsx";
+import PlanPage from "./pages/PlanPage.jsx";
+import Pricing from "./pages/Pricing.jsx";
+import Checkout from "./pages/Checkout.jsx";
+import AfterSales from "./pages/AfterSales.jsx";
+import SuccessCancel from "./pages/SuccessCancel.jsx";
+import Legal from "./pages/Legal.jsx";
 
 export default function App(){
-  const [step, setStep] = useState("landing");
-  const [model, setModel] = useState(null);
-  const [results, setResults] = useState([]);
-  const [checkout, setCheckout] = useState(false);
-
-  function handleNav(s){ setStep(s); }
-  function onRecoDone(payload){
-    setModel(payload.model);
-    setResults(payload.results);
-    setStep("results");
-  }
-
   return (
-    <div style={{maxWidth:1080, margin:"0 auto", padding:"18px"}}>
-      {step!=="landing" && (<NavBar step={step} onNav={handleNav}/>)}
-      {step==="landing" && (<LandingPage onReco={()=>setStep("reco")} onPlan={()=>setStep("plan")} />)}
-      {step==="reco" && (<RecoPage onResults={onRecoDone} />)}
-      {step==="plan" && (<PlanPage onPreview={(m)=>{ setModel(m); setStep("results"); }} />)}
-      {step==="results" && !checkout && (
-        <ResultsPage model={model||{}} results={results||[]} onBack={()=>{ setModel(null); setResults([]); setStep("landing"); }} />
-      )}
-      {checkout && (<CheckoutPage onSuccess={()=>{ setCheckout(false); setStep("after"); }} onCancel={()=>setCheckout(false)} />)}
-      {step==="after" && (<AfterSales />)}
-      <Footer />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route element={<AppShell/>}>
+          <Route path="/" element={<LandingPage />} />
+          <Route path="/reco" element={<RecoPage />} />
+          <Route path="/results" element={<Results />} />
+          <Route path="/plan" element={<PlanPage />} />
+          <Route path="/pricing" element={<Pricing />} />
+          <Route path="/checkout" element={<Checkout />} />
+          <Route path="/after-sales" element={<AfterSales />} />
+          <Route path="/success" element={<SuccessCancel />} />
+          <Route path="/legal" element={<Legal />} />
+          <Route path="/welcome" element={<Navigate to="/" replace />} />
+          <Route path="*" element={<Navigate to="/" replace />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
-
-
-
-
-
-

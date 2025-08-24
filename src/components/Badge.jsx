@@ -1,1 +1,4 @@
-﻿import React from "react"; export default function Badge({children}){ return <span style={{display:"inline-block",padding:"4px 8px",borderRadius:999,background:"var(--color-bg-muted)",border:"1px solid var(--color-border)",fontSize:12}}>{children}</span> }
+import React from "react";
+export default function Badge({ok,label,detail}) {
+  return <span title={detail||""} className={"pf-badge " + (ok? "ok":"no")}>{ok? "Eligible":"Not Eligible"} {label? "? "+label:""}</span>;
+}

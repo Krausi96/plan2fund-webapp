@@ -1,1 +1,64 @@
-﻿{ "brand":{"name":"Plan2Fund","tagline":"Freiheit beginnt mit einem klaren Plan - bauen wir deinen."} }
+{
+  "nav.home": "Start",
+  "cta.findFunding": "Förderung finden",
+  "cta.generatePlan": "Businessplan erstellen",
+  "landing": {
+    "hero": {
+      "eyebrow": "Plan2Fund",
+      "title": "Freiheit beginnt mit einem klaren Plan — lass uns deinen bauen.",
+      "sub": "Erstelle einreichungsfähige Dokumente für Investoren & Behörden und finde passende Förderungen — schnell, sauber und wiederverwendbar."
+    },
+    "usecases": {
+      "title": "Anwendungsfälle"
+    },
+    "cards": {
+      "funding": {
+        "title": "Förderungen finden",
+        "desc": "Kuratiere Programme passend zu Phase, Branche und Standort."
+      },
+      "plan": {
+        "title": "Businessplan erstellen",
+        "desc": "Strukturierter, einreichungsreifer Plan mit Export und Bearbeitung."
+      },
+      "templates": {
+        "title": "Nur Vorlagen",
+        "desc": "Saubere Vorlagen für Förderungen, Visa, Banken u. m."
+      }
+    },
+    "offer": {
+      "title": "Unser Angebot",
+      "basic": {
+        "title": "Starter",
+        "desc": "KI‑unterstützter Entwurf mit Export nach Google Docs oder Word."
+      },
+      "funding": {
+        "title": "Funding Pack",
+        "desc": "Plan‑Entwurf plus Shortlist passender Programme."
+      },
+      "full": {
+        "title": "Full Pack",
+        "desc": "Alles oben plus Feinschliff und Einreich‑Checkliste."
+      },
+      "item": {
+        "structured": "Strukturierter Plan‑Aufbau",
+        "export": "Export nach Google Doc / Word",
+        "async": "Asynchrone Lieferung, keine Calls nötig",
+        "shortlist": "Shortlist passender Programme",
+        "execsum": "1‑Seiten Executive Summary",
+        "revision": "1 Gratis‑Revision",
+        "nda": "Vertraulichkeitsvereinbarung (NDA) auf Wunsch",
+        "checklist": "Einreich‑Checkliste",
+        "support": "E‑Mail‑Support"
+      }
+    },
+    "included": {
+      "title": "Was ist enthalten",
+      "item1": "Ein strukturierter, einreichungsfertiger Businessplan oder Antrag",
+      "item2": "Lieferung als Google Doc oder Word (PDF optional, editierbar)",
+      "item3": "Inklusive 1‑seitiger Executive Summary",
+      "item4": "Vertraulichkeitsvereinbarung (NDA) von uns (optional)",
+      "item5": "Inklusive 1 kostenloser Überarbeitung bei Bedarf",
+      "item6": "Asynchron: Keine Calls oder Meetings nötig. Erreichbar bei Fragen."
+    }
+  }
+}

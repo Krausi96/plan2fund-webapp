@@ -1,8 +1,8 @@
-﻿export default function SuccessCancel({ success }) {
+
+export default function SuccessCancel(){
   return (
-    <div style={{padding:"2rem"}}>
-      <h2>{success ? "Payment successful" : "Payment cancelled"}</h2>
-      <a href="/">Back to app</a>
+    <div className="container">
+      <div className="card">Success / Cancel stub.</div>
     </div>
-  );
+  )
 }

@@ -1,0 +1,7 @@
+[
+  { "id":"aws-preseed", "name":"AWS PreSeed", "country":"AT", "score":92, "why":"Deep-tech, early-stage fit", "eligible":true, "unmet":[] },
+  { "id":"ffg-basis", "name":"FFG Basisprogramm", "country":"AT", "score":88, "why":"R&D cost share", "eligible":true, "unmet":["TRL clarity"] },
+  { "id":"eic-accelerator", "name":"EIC Accelerator", "country":"EU", "score":83, "why":"High-risk innovation", "eligible":false, "unmet":["TRL 5+","Cofunding 30%"] },
+  { "id":"aws-seedfin", "name":"AWS Seedfinancing", "country":"AT", "score":79, "why":"Team & traction focus", "eligible":true, "unmet":["Advisory board"] },
+  { "id":"horizon-europe", "name":"Horizon Europe (Pillar II)", "country":"EU", "score":74, "why":"Consortia strength", "eligible":false, "unmet":["Consortium partners","Call fit"] }
+]

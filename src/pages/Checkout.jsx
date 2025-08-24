@@ -1,12 +1,33 @@
-﻿export default function CheckoutPage({ onSuccess, onCancel }) {
+import React from "react";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
+import Card from "../components/Card";
+import flags from "../config/flags.json";
+
+export default function Checkout(){
   return (
-    <div style={{maxWidth:720, margin:"40px auto"}}>
-      <h2>Checkout (stub)</h2>
-      <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:12,margin:"12px 0"}}>
-        <div style={{border:"1px solid #e5e7eb",borderRadius:12,padding:12}}><b>Standard</b><div>EUR 19 - single export</div><button onClick={onSuccess} style={{marginTop:6}}>Buy</button></div>
-        <div style={{border:"1px solid #e5e7eb",borderRadius:12,padding:12}}><b>Priority</b><div>EUR 49 - multi export + extras</div><button onClick={onSuccess} style={{marginTop:6}}>Buy</button></div>
-      </div>
-      <button onClick={onCancel}>Cancel</button>
+    <div>
+      <Header/>
+      <section className="pf-section">
+        <div className="pf-wrap">
+          <h2 style={{marginTop:0}}>Checkout</h2>
+          <div className="pf-grid">
+            <Card title="Summary">
+              <ul>
+                <li>Plan: Custom Plan</li>
+                <li>Total: ?49</li>
+              </ul>
+              <button className="pf-btn primary" disabled={!flags.CHECKOUT_ENABLED}>
+                {flags.CHECKOUT_ENABLED? "Pay now":"Pay (disabled)"}
+              </button>
+            </Card>
+            <Card title="Payment (Stripe-style UI stub)">
+              <p>Cardholder, card number, expiry, CVC (disabled)</p>
+            </Card>
+          </div>
+        </div>
+      </section>
+      <Footer/>
     </div>
   );
 }
