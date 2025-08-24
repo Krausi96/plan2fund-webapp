@@ -3,6 +3,7 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Card from "../components/Card";
 import Badge from "../components/Badge";
+import data from "../data/programs.local.json";
 
 export default function Reco(){
   const [idea,setIdea] = useState("");
@@ -10,9 +11,7 @@ export default function Reco(){
   const [loc,setLoc] = useState("AT");
   const [list,setList] = useState([]);
 
-  useEffect(()=>{
-    fetch("/src/data/programs.local.json").then(r=>r.json()).then(setList).catch(()=>setList([]));
-  },[]);
+  useEffect(()=>{ setList(Array.isArray(data)? data : []); },[]);
 
   const filtered = list
     .map(p=>({...p, score: p.score - (idea?0:5) - (sector?0:5) - (loc?0:10)}))

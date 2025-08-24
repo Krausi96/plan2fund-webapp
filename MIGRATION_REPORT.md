@@ -75,3 +75,8 @@ Date: 2025-08-24 23:32:00 +02:00
 **Build Guard**
 - No new deps; vanilla React + CSS.
 - Router uses History API; links intercepted to keep SPA.
+### Patch: Reco.jsx static corpus import
+Date: 2025-08-24 23:32:31 +02:00
+
+- Replaced runtime fetch('/src/data/programs.local.json') with static import '../data/programs.local.json'
+- Rationale: Vite serves /src differently; static import is dev+build safe and honors no-network rule.
