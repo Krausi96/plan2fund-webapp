@@ -5,7 +5,7 @@ import Footer from "../components/Footer";
 import Hero from "../components/Hero";
 import Intro from "../components/Intro";
 import UseCases from "../components/UseCases";
-import Products from "../components/Products";
+import ProductGrid from "../components/ProductGrid";
 import HowItWorks from "../components/HowItWorks";
 import Numbers from "../components/Numbers";
 
@@ -30,7 +30,7 @@ export default function LandingPage() {
         </section>
 
         <section className="section light border-top">
-          <Products />
+          <ProductGrid />
         </section>
 
         <section className="section white border-top">
