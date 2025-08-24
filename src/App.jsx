@@ -1,29 +1,26 @@
 ﻿import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
+import NavBar from "./components/NavBar";
+import Footer from "./components/Footer";
+
 import LandingPage from "./pages/LandingPage";
-import PlanPage from "./pages/PlanPage";
 import RecoPage from "./pages/RecoPage";
-import Pricing from "./pages/Pricing";
-import Legal from "./pages/Legal";
-import Results from "./pages/Results";
-import Checkout from "./pages/Checkout";
-import AfterSales from "./pages/AfterSales";
-import SuccessCancel from "./pages/SuccessCancel";
+import PlanPage from "./pages/PlanPage";
+import ResultsPage from "./pages/ResultsPage";
 
 export default function App() {
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<LandingPage />} />
-        <Route path="/plan" element={<PlanPage />} />
-        <Route path="/reco" element={<RecoPage />} />
-        <Route path="/pricing" element={<Pricing />} />
-        <Route path="/legal" element={<Legal />} />
-        <Route path="/results" element={<Results />} />
-        <Route path="/checkout" element={<Checkout />} />
-        <Route path="/aftersales" element={<AfterSales />} />
-        <Route path="/success" element={<SuccessCancel />} />
-      </Routes>
-    </Router>
+    <div className="app-shell flex flex-col min-h-screen">
+      <NavBar />
+      <main className="flex-grow">
+        <Routes>
+          <Route path="/" element={<LandingPage />} />
+          <Route path="/funding" element={<RecoPage />} />
+          <Route path="/plan" element={<PlanPage />} />
+          <Route path="/results" element={<ResultsPage />} />
+        </Routes>
+      </main>
+      <Footer />
+    </div>
   );
 }
