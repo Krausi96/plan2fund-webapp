@@ -97,3 +97,91 @@
   position: absolute;
   left: 0;
 }
+
+/* --- Final Styling Polish --- */
+
+/* Header */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: rgba(255,255,255,0.8);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--color-border);
+}
+header a {
+  color: var(--color-fg);
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+}
+header a:hover {
+  color: var(--color-primary-600);
+}
+
+/* Footer */
+footer {
+  border-top: 1px solid var(--color-border);
+  background: #f9fafb;
+  padding: 3rem 1.5rem;
+}
+footer .footer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 2rem;
+}
+footer h4 {
+  font-size: var(--fs-sm);
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+footer a {
+  display: block;
+  font-size: var(--fs-sm);
+  color: var(--color-fg-muted);
+  margin-bottom: 0.25rem;
+}
+footer a:hover {
+  color: var(--color-primary-600);
+}
+
+/* Typography */
+h1, .hero-title {
+  font-family: var(--font-sans);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+h2 {
+  font-size: var(--fs-2xl);
+  font-weight: 700;
+  margin-bottom: var(--space-6);
+}
+h3 {
+  font-size: var(--fs-lg);
+  font-weight: 600;
+  margin-bottom: var(--space-2);
+}
+p {
+  font-size: var(--fs-base);
+  line-height: var(--lh-normal);
+}
+
+/* Section rhythm */
+.section {
+  padding: 5rem 1.5rem;
+}
+.section + .section {
+  border-top: 1px solid var(--color-border);
+}
+
+/* Buttons polish */
+.btn {
+  transition: transform 0.15s ease, background 0.2s ease, box-shadow 0.2s ease;
+}
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.08);
+}
+.btn:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
