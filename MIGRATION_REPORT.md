@@ -87,3 +87,7 @@ Date: 2025-08-24 23:36:58 +02:00
 - Normalized quotes/dash
 - Hero sizing/contrast tweaked
 
+### Patch: ASCII-safe Hero + sizing overrides
+Date: 2025-08-24 23:39:23 +02:00
+- Rewrote src/components/Hero.jsx with \u escapes for dash/bullets/emojis.
+- Added CSS overrides block (marker: PATCH: HERO-OVERRIDES) for spacing/contrast.

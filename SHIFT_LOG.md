@@ -2,3 +2,4 @@
 2025-08-24 23:32:00 +02:00  |  Shift applied: Design-System Unify & Full Journey (Steps 1–10)
 2025-08-24 23:32:31 +02:00  |  Reco.jsx patched to static import
 2025-08-24 23:36:58 +02:00  |  UI patch: ASCII-safe hero + spacing
+2025-08-24 23:39:23 +02:00  |  UI patch: Hero.jsx rewritten with \\u escapes; hero CSS overrides

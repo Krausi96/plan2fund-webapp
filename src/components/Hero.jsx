@@ -4,7 +4,7 @@ export default function Hero(){
     left: Math.random()*100,
     delay: Math.random()*6,
     dur: 6 + Math.random()*7,
-    char: Math.random()>0.5 ? "??" : "??"
+    char: Math.random()>0.5 ? '\uD83D\uDCB6' : '\uD83D\uDCC8' // ?? or ??
   })),[]);
   return (
     <section className="pf-hero">
@@ -12,14 +12,14 @@ export default function Hero(){
         {emojis.map((e,i)=>(<i key={i} style={{left:e.left+"%", animationDuration:e.dur+"s", animationDelay:e.delay+"s"}}>{e.char}</i>))}
       </div>
       <div className="pf-hero-wrap">
-        <h1>Freedom starts with a clear plan ? let?s build yours</h1>
+        <h1>Freedom starts with a clear plan \u2014 let&apos;s build yours</h1>
         <p>Find the right grants in Austria/EU and generate a sharp, investor-ready business plan. Clean UI, no spam, no trackers.</p>
         <div style={{display:"flex",gap:12,justifyContent:"center",flexWrap:"wrap"}}>
           <a className="pf-btn primary" href="/reco">Find Funding</a>
           <a className="pf-btn" href="/plan">Generate Plan</a>
         </div>
         <div style={{marginTop:26,opacity:.85,fontSize:13}}>
-          <span>GDPR ? Terms ? Contact ? Pricing ? Examples</span>
+          <span>GDPR \u2022 Terms \u2022 Contact \u2022 Pricing \u2022 Examples</span>
         </div>
       </div>
     </section>
