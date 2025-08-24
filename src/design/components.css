@@ -294,3 +294,30 @@ label{ font-size:13px; color:#cbd5e1; }
 
 /* Checklist */
 .checklist { text-align:left; list-style:decimal; padding-left:1.5rem; }
+
+/* General Layout */
+.section { padding: 5rem 1.5rem; }
+.section + .section { border-top: 1px solid var(--color-border); }
+.section h2 { font-size: 2rem; font-weight: 700; margin-bottom: 2rem; }
+
+/* Hero */
+.hero-inner { max-width: 720px; margin: 0 auto; padding: 6rem 1.5rem; }
+.hero-title { font-size: 2.5rem; font-weight: 800; }
+.hero-sub { font-size: 1.125rem; margin-top: 1rem; }
+.hero-cta { margin-top: 2rem; }
+
+/* Cards */
+.card-grid { display:grid; grid-template-columns: repeat(auto-fit,minmax(240px,1fr)); gap:2rem; }
+.card { background:#111; padding:2rem; border-radius:1rem; box-shadow:0 2px 6px rgba(0,0,0,0.2); transition:transform 0.2s; }
+.card:hover { transform:translateY(-5px); }
+
+/* Checklist */
+.checklist { text-align:left; list-style:decimal; padding-left:1.5rem; font-size:1.125rem; }
+
+/* Animations */
+.animate-fade { animation: fadeIn 1s ease forwards; opacity:0; }
+.animate-up { animation: slideUp 1s ease forwards; opacity:0; }
+.animate-fly { animation: flyIn 1s ease forwards; opacity:0; }
+@keyframes fadeIn { to { opacity:1; } }
+@keyframes slideUp { from { transform:translateY(40px); opacity:0;} to{transform:translateY(0);opacity:1;} }
+@keyframes flyIn { from{transform:scale(0.95);opacity:0;} to{transform:scale(1);opacity:1;} }

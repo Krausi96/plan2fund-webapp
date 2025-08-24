@@ -1,4 +1,4 @@
-import React from "react";
+ï»¿import React from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 
@@ -16,15 +16,15 @@ export default function LandingPage() {
       <section className="hero relative text-center">
         <div className="hero-bg">
           <div className="bg-icons">
-            <span>??</span>
-            <span>??</span>
-            <span>??</span>
-            <span>??</span>
+            <span>ğŸ“‹</span>
+            <span>ğŸ¯</span>
+            <span>ğŸ“ˆ</span>
+            <span>ğŸ¤</span>
           </div>
-          <div className="emoji-rain">?? ?? ??</div>
+          <div className="emoji-rain">ğŸ’¶ ğŸ’µ ğŸ’¡</div>
         </div>
         <div className="hero-inner">
-          <h1 className="hero-title">Freedom starts with a clear plan — let’s build yours</h1>
+          <h1 className="hero-title">Freedom starts with a clear plan â€” letâ€™s build yours</h1>
           <p className="hero-sub">
             Find the right grants in Austria/EU and generate a sharp, investor-ready business plan.
             Clean UI, no spam, no trackers.
@@ -33,16 +33,13 @@ export default function LandingPage() {
             <a href="/reco" className="btn btn-primary">Find Funding</a>
             <a href="/plan" className="btn btn-secondary ml-4">Generate Plan</a>
           </div>
-          <div className="hero-trust mt-6 text-sm">
-            GDPR • Terms • Contact • Pricing • Examples
-          </div>
         </div>
       </section>
 
       {/* Intro */}
       <section className="section light border-top text-center animate-fade">
         <p className="text-lg">
-          Whether you’re shaping an idea, applying for funding or preparing a visa —
+          Whether youâ€™re shaping an idea, applying for funding or preparing a visa â€”
           we turn your thoughts, drafts or existing business into a submission &
           funding-ready Business Plan.
         </p>
@@ -98,7 +95,7 @@ export default function LandingPage() {
       <section className="section white border-top text-center animate-up">
         <h2>How It Works</h2>
         <ol className="checklist max-w-2xl mx-auto">
-          <li>Input your idea ? corpus-driven plan</li>
+          <li>Input your idea â†’ corpus-driven plan</li>
           <li>Add overlays: finances, program requirements</li>
           <li>Preview with eligibility & pricing (future checkout/export)</li>
         </ol>
@@ -111,7 +108,7 @@ export default function LandingPage() {
           <div><strong>500M+</strong><p>Funding opportunities indexed</p></div>
           <div><strong>135+</strong><p>Countries supported</p></div>
         </div>
-        <div className="globe-placeholder mt-8">?? [Globe Animation Placeholder]</div>
+        <div className="globe-placeholder mt-8">ğŸŒ [Globe Animation Placeholder]</div>
       </section>
 
       <Footer />
