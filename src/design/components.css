@@ -72,3 +72,17 @@
 @keyframes fadeIn { to { opacity:1; } }
 @keyframes slideUp { from { transform:translateY(40px); opacity:0;} to{transform:translateY(0);opacity:1;} }
 @keyframes flyIn { from{transform:scale(0.95);opacity:0;} to{transform:scale(1);opacity:1;} }
+
+/* Hero Polished */
+.hero { position: relative; min-height: 100vh; display:flex; flex-direction:column; justify-content:center; align-items:center; }
+.hero-bg { background: linear-gradient(135deg,#0a2540,#1a365d); position:absolute; inset:0; z-index:0; overflow:hidden; }
+.hero-title { font-size:3rem; font-weight:800; color:white; }
+.hero-sub { font-size:1.25rem; color:#e0e0e0; }
+.hero-cta .btn { padding:0.75rem 1.5rem; border-radius:0.75rem; font-weight:600; }
+
+/* Floating Background Icons */
+.bg-icons { position:absolute; inset:0; display:flex; justify-content:space-around; align-items:center; opacity:0.05; font-size:4rem; animation:floatIcons 40s linear infinite; }
+.emoji-rain { position:absolute; top:0; left:50%; font-size:2rem; opacity:0.15; animation:rain 12s linear infinite; }
+
+@keyframes floatIcons { from{transform:translateY(0);} to{transform:translateY(-20px);} }
+@keyframes rain { from{transform:translateY(-100%);} to{transform:translateY(100vh);} }
