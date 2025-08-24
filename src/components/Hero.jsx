@@ -1,29 +1,35 @@
-import React, {useMemo} from "react";
-import TrustBar from "./TrustBar";
-export default function Hero(){
-  const emojis = useMemo(()=>Array.from({length:18}).map((_,i)=>({
-    left: Math.random()*100, delay: Math.random()*6, dur: 7 + Math.random()*6,
-    char: Math.random()>0.5 ? '\uD83D\uDCB6' : '\uD83D\uDCC8'
-  })),[]);
+import React from "react";
+import "../design/components.css";
+import "../design/motion.css";
+
+export default function Hero() {
   return (
-    <>
-      <section className="pf-hero">
-        <div className="pf-emoji" aria-hidden="true">
-          {emojis.map((e,i)=>(<i key={i} style={{left:e.left+"%", animationDuration:e.dur+"s", animationDelay:e.delay+"s"}}>{e.char}</i>))}
+    <section className="hero relative text-center">
+      <div className="hero-bg">
+        {/* Animated background icons (action plan style) */}
+        <div className="bg-icons">
+          <span className="icon">??</span>
+          <span className="icon">??</span>
+          <span className="icon">??</span>
+          <span className="icon">??</span>
         </div>
-        <div className="pf-hero-wrap">
-          <h1>Freedom starts with a clear plan {'\u2014'} let&apos;s build yours</h1>
-          <p>Find the right grants in Austria/EU and generate a sharp, investor-ready business plan. Clean UI, no spam, no trackers.</p>
-          <div style={{display:"flex",gap:12,justifyContent:"center",flexWrap:"wrap"}}>
-            <a className="pf-btn primary" href="/reco">Find Funding</a>
-            <a className="pf-btn" href="/plan">Generate Plan</a>
-          </div>
-          <div style={{marginTop:26,opacity:.85,fontSize:13}}>
-            <span>GDPR {'\u2022'} Terms {'\u2022'} Contact {'\u2022'} Pricing {'\u2022'} Examples</span>
-          </div>
+        {/* Emoji rain */}
+        <div className="emoji-rain">?? ?? ??</div>
+      </div>
+      <div className="hero-inner">
+        <h1 className="hero-title">Freedom starts with a clear plan — let’s build yours</h1>
+        <p className="hero-sub">
+          Find the right grants in Austria/EU and generate a sharp, investor-ready business plan.
+          Clean UI, no spam, no trackers.
+        </p>
+        <div className="hero-cta">
+          <a href="/reco" className="btn btn-primary">Find Funding</a>
+          <a href="/plan" className="btn btn-secondary ml-4">Generate Plan</a>
         </div>
-      </section>
-      <TrustBar/>
-    </>
+        <div className="hero-trust mt-6 text-sm">
+          GDPR • Terms • Contact • Pricing • Examples
+        </div>
+      </div>
+    </section>
   );
 }

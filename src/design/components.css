@@ -81,3 +81,37 @@ label{ font-size:13px; color:#cbd5e1; }
 /* Mobile tweaks */
 @media (max-width: 900px){ .pf-trust-grid{ grid-template-columns: repeat(2,1fr); } }
 @media (max-width: 640px){ .pf-hero .pf-hero-wrap{ padding: 92px 16px 60px; } .pf-nav{ display:none; } }
+
+/* Hero background with animated action-plan icons */
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, #0a2540, #1a365d);
+  overflow: hidden;
+  z-index: -1;
+}
+
+.bg-icons {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  animation: floatIcons 20s linear infinite;
+  opacity: 0.1;
+  font-size: 3rem;
+}
+
+.bg-icons .icon {
+  animation: bounce 6s ease-in-out infinite alternate;
+}
+
+@keyframes floatIcons {
+  from { transform: translateY(0); }
+  to { transform: translateY(-20px); }
+}
+
+@keyframes bounce {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-15px); }
+}
