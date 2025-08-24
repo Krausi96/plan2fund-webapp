@@ -1,27 +1,27 @@
-﻿import React from "react";
+import React from "react";
 
-export default function Hero() {
+function Hero() {
   return (
-    <section className="hero relative flex flex-col items-center justify-center text-center min-h-screen overflow-hidden">
-      <div className="hero-bg absolute inset-0 bg-gradient-to-br from-[#0a2540] to-[#1a365d] z-0">
-        <div className="bg-icons">
-          <span>📋</span>
-          <span>🎯</span>
-          <span>📈</span>
-          <span>💶</span>
-        </div>
-        <div className="emoji-rain">💶 💵 💡</div>
-      </div>
-      <div className="hero-inner relative z-10 px-6 max-w-4xl mx-auto animate-fade">
-        <h1 className="hero-title">Freedom starts with a clear plan — let’s build yours</h1>
-        <p className="hero-sub mt-6">
-          Find the right grants in Austria/EU and generate a sharp, investor-ready business plan.
-        </p>
-        <div className="hero-cta mt-8 flex justify-center gap-4">
-          <a href="/reco" className="btn btn-primary">Find Funding</a>
-          <a href="/plan" className="btn btn-secondary">Generate Plan</a>
-        </div>
+    <section className="relative flex flex-col items-center justify-center text-center py-24 px-6 bg-gradient-to-b from-gray-900 to-gray-800">
+      <h1 className="text-4xl md:text-6xl font-extrabold mb-6">
+        Freedom starts with a clear plan �
+        <br />
+        let�s build yours
+      </h1>
+      <p className="text-lg md:text-xl text-gray-300 max-w-2xl mb-8">
+        Find the right grants in Austria/EU and generate a sharp,
+        investor-ready business plan. Clean UI, no spam, no trackers.
+      </p>
+      <div className="flex gap-4">
+        <button className="px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-lg shadow">
+          Find Funding
+        </button>
+        <button className="px-6 py-3 bg-white text-gray-900 rounded-lg shadow hover:bg-gray-100">
+          Generate Plan
+        </button>
       </div>
     </section>
   );
 }
+
+export default Hero;

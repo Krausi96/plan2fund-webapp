@@ -1,32 +1,40 @@
 import React from "react";
 
-export default function Footer() {
+function Footer() {
   return (
-    <footer className="footer">
-      <div className="footer-grid">
+    <footer className="py-10 px-6 bg-gray-900 text-gray-400 border-t border-gray-700 mt-auto">
+      <div className="max-w-6xl mx-auto grid md:grid-cols-4 gap-6 text-sm">
         <div>
-          <h4>Plan2Fund</h4>
+          <h4 className="text-white font-semibold mb-2">Plan2Fund</h4>
           <p>Freedom starts with a clear plan.</p>
         </div>
         <div>
-          <h4>Legal</h4>
-          <a href="/gdpr">GDPR</a>
-          <a href="/terms">Terms</a>
+          <h4 className="text-white font-semibold mb-2">Legal</h4>
+          <ul>
+            <li>GDPR</li>
+            <li>Terms</li>
+          </ul>
         </div>
         <div>
-          <h4>Company</h4>
-          <a href="/contact">Contact</a>
-          <a href="/pricing">Pricing</a>
+          <h4 className="text-white font-semibold mb-2">Company</h4>
+          <ul>
+            <li>Contact</li>
+            <li>Pricing</li>
+          </ul>
         </div>
         <div>
-          <h4>Resources</h4>
-          <a href="/examples">Examples</a>
-          <a href="/docs">Docs</a>
+          <h4 className="text-white font-semibold mb-2">Resources</h4>
+          <ul>
+            <li>Examples</li>
+            <li>Docs</li>
+          </ul>
         </div>
       </div>
-      <div className="text-center mt-8 text-sm text-gray-500">
+      <div className="mt-8 text-center text-xs text-gray-500">
         © 2025 Plan2Fund • Made in EU • No trackers
       </div>
     </footer>
   );
 }
+
+export default Footer;
