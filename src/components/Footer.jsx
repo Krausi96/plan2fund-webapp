@@ -1,16 +1,29 @@
-
 import React from "react";
-import { useI18n } from "../lib/i18n.js";
-export default function Footer(){
-  const { t } = useI18n();
+
+export default function Footer() {
   return (
     <footer>
-      <div className="container" style={{display:"grid",gridTemplateColumns:"repeat(auto-fit,minmax(200px,1fr))",gap:16,alignItems:"center"}}>
-        <div><a href="/contact.html">{t("footer.contact")}</a></div>
-        <div><a href="/terms.html">{t("footer.terms")}</a></div>
-        <div><a href="/gdpr.html">{t("footer.privacy")}</a></div>
-        <div><a href="/impressum.html">{t("footer.legal")}</a></div>
-        <div className="legal">{t("footer.copy")}</div>
+      <div className="footer-grid">
+        <div>
+          <h4>Product</h4>
+          <a href="/plan">Business Plan</a>
+          <a href="/reco">Recommendations</a>
+          <a href="/pricing">Pricing</a>
+        </div>
+        <div>
+          <h4>Company</h4>
+          <a href="/about">About</a>
+          <a href="/legal">Legal</a>
+          <a href="/contact">Contact</a>
+        </div>
+        <div>
+          <h4>Resources</h4>
+          <a href="/docs">Docs</a>
+          <a href="/faq">FAQ</a>
+        </div>
+      </div>
+      <div className="text-center mt-8 text-sm text-gray-500">
+        © 2025 Plan2Fund. All rights reserved.
       </div>
     </footer>
   );

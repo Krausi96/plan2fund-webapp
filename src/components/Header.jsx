@@ -1,19 +1,15 @@
-
 import React from "react";
-import LangSwitch from "./LangSwitch.jsx";
 
-export default function Header(){
+export default function Header() {
   return (
-    <header className="sticky">
-      <div className="container" style={{display:"flex",alignItems:"center",justifyContent:"space-between",height:64}}>
-        <a href="/" style={{fontWeight:700}}>Plan2Fund</a>
-        <nav style={{display:"grid",gridAutoFlow:"column",gap:18,alignItems:"center"}}>
-          <a href="/#personal">Personal</a>
-          <a href="/#orgs">Organisations</a>
-          <a href="/#build">Build your Freedom</a>
-          <LangSwitch />
-        </nav>
-      </div>
+    <header className="flex justify-between items-center px-6 py-3">
+      <div className="font-bold text-lg">Plan2Fund</div>
+      <nav className="flex gap-4">
+        <a href="/">Home</a>
+        <a href="/plan">Plan Builder</a>
+        <a href="/reco">Recommendations</a>
+        <a href="/pricing">Pricing</a>
+      </nav>
     </header>
   );
 }
