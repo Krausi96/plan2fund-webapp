@@ -1,69 +1,29 @@
-﻿/* Header */
-.header {
-  position: sticky;
-  top: 0;
-  background: rgba(20,20,20,0.7);
-  backdrop-filter: blur(12px);
-  border-bottom: 1px solid var(--color-border);
-  z-index: 50;
-}
-.header a { color: var(--color-fg); margin: 0 0.5rem; text-decoration:none; }
-.header a:hover { color: var(--color-primary-600); }
-
-/* Footer */
-.footer {
-  border-top: 1px solid var(--color-border);
-  background: #0a0a0a;
-  padding: 3rem 1.5rem;
-  color: var(--color-fg-muted);
-}
-.footer-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(160px,1fr));
-  gap: 2rem;
-}
-.footer h4 { font-size: var(--fs-sm); font-weight: 600; margin-bottom: 0.5rem; }
-
-/* Hero */
-.hero-bg {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(135deg,#0a2540,#1a365d);
-  overflow: hidden;
-  z-index: -1;
-}
-.hero-inner { max-width: 720px; margin: 0 auto; padding: 8rem 1.5rem; }
-.hero-title { font-size: 2.75rem; font-weight: 800; }
-.hero-sub { font-size: 1.125rem; margin-top: 1rem; }
-.hero-cta { margin-top: 2rem; }
-
-/* Floating icons */
-.bg-icons {
-  position: absolute;
-  inset: 0;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  opacity: 0.05;
-  font-size: 3rem;
-  animation: floatIcons 30s linear infinite;
-}
-.emoji-rain { position: absolute; top:10%; left:50%; animation: rain 10s linear infinite; opacity:0.2; font-size:2rem; }
-@keyframes rain { from{transform:translateY(-100%);} to{transform:translateY(100vh);} }
-@keyframes floatIcons { from{transform:translateY(0);} to{transform:translateY(-20px);} }
-
-/* Sections */
+﻿/* General Section */
 .section { padding: 5rem 1.5rem; }
 .section + .section { border-top: 1px solid var(--color-border); }
 .section h2 { font-size: 2rem; font-weight: 700; margin-bottom: 2rem; }
+
+/* Hero */
+.hero-title { font-size: 3rem; font-weight: 800; color: white; }
+.hero-sub { font-size: 1.25rem; color: #e0e0e0; }
+.hero-cta .btn { padding:0.75rem 1.5rem; border-radius:0.75rem; font-weight:600; }
+
+/* Background Animation */
+.bg-icons { position:absolute; inset:0; display:flex; justify-content:space-around; align-items:center; opacity:0.05; font-size:4rem; animation:floatIcons 40s linear infinite; }
+.emoji-rain { position:absolute; top:0; left:50%; font-size:2rem; opacity:0.15; animation:rain 12s linear infinite; }
+
+@keyframes floatIcons { from{transform:translateY(0);} to{transform:translateY(-20px);} }
+@keyframes rain { from{transform:translateY(-100%);} to{transform:translateY(100vh);} }
 
 /* Cards */
 .card-grid { display:grid; grid-template-columns: repeat(auto-fit,minmax(240px,1fr)); gap:2rem; }
 .card { background:#111; padding:2rem; border-radius:1rem; box-shadow:0 2px 6px rgba(0,0,0,0.2); transition:transform 0.2s; }
 .card:hover { transform:translateY(-5px); }
 
-/* Checklist */
-.checklist { text-align:left; list-style:decimal; padding-left:1.5rem; font-size:1.125rem; }
+/* Flow Steps */
+.flow-steps { display:grid; gap:1.5rem; max-width:640px; margin:0 auto; text-align:left; }
+.step { display:flex; align-items:center; gap:1rem; font-size:1.125rem; }
+.step-num { background:#1a365d; color:white; font-weight:700; padding:0.5rem 1rem; border-radius:9999px; }
 
 /* Animations */
 .animate-fade { animation: fadeIn 1s ease forwards; opacity:0; }
@@ -72,17 +32,3 @@
 @keyframes fadeIn { to { opacity:1; } }
 @keyframes slideUp { from { transform:translateY(40px); opacity:0;} to{transform:translateY(0);opacity:1;} }
 @keyframes flyIn { from{transform:scale(0.95);opacity:0;} to{transform:scale(1);opacity:1;} }
-
-/* Hero Polished */
-.hero { position: relative; min-height: 100vh; display:flex; flex-direction:column; justify-content:center; align-items:center; }
-.hero-bg { background: linear-gradient(135deg,#0a2540,#1a365d); position:absolute; inset:0; z-index:0; overflow:hidden; }
-.hero-title { font-size:3rem; font-weight:800; color:white; }
-.hero-sub { font-size:1.25rem; color:#e0e0e0; }
-.hero-cta .btn { padding:0.75rem 1.5rem; border-radius:0.75rem; font-weight:600; }
-
-/* Floating Background Icons */
-.bg-icons { position:absolute; inset:0; display:flex; justify-content:space-around; align-items:center; opacity:0.05; font-size:4rem; animation:floatIcons 40s linear infinite; }
-.emoji-rain { position:absolute; top:0; left:50%; font-size:2rem; opacity:0.15; animation:rain 12s linear infinite; }
-
-@keyframes floatIcons { from{transform:translateY(0);} to{transform:translateY(-20px);} }
-@keyframes rain { from{transform:translateY(-100%);} to{transform:translateY(100vh);} }
