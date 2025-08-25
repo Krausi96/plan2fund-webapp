@@ -1,0 +1,105 @@
+?? Plan2Fund — User Journey MASTER (V11 Full, Foolproof Blueprint)
+
+## ?? 1. Global Rules
+### Navigation (Dynamic NavBar)
+- Appears only once user enters Funding (3a) or Plan (3b).
+- Dynamic start:
+  - Funding entry ? NavBar: Funding > Plan > Readiness > Preview > Pricing > Checkout > Confirmation
+  - Plan entry ? NavBar: Plan > Readiness > Preview > Pricing > Checkout > Confirmation
+- Always visible, sticky. Current step highlighted, past steps greyed, future visible but not clickable.
+- Progress indicator: “Step X of Y”.
+
+### Personas
+- Frustrated: defaults auto-filled, speed.
+- Newbie: tooltips expanded, education.
+- Expert: advanced fields open, “Already know program?” shortcut.
+- Idea-stage: light survey, “Did you know?” bubbles.
+
+### Inputs, Uploads, State
+- At least 1 mandatory per block, 1 optional.
+- Skipped ? defaults auto-filled, flagged in Preview.
+- Drag & drop uploads per block (PDF/DOCX/XLSX).
+- Auto-save to local storage.
+
+### Layout & Trust
+- Layout.jsx wraps NavBar + Footer.
+- Footer: Terms, Privacy, GDPR, Contact.
+- Trust: GDPR, SSL, Revision Guarantee badges.
+- Testimonials placeholders.
+
+### Animations & Responsiveness
+- Hero float, fade-in sections, survey slide, stagger cards, expand/collapse blocks.
+- Respect “reduce motion”.
+- NavBar collapses on mobile, grids stack, tables scroll.
+
+---
+
+## ?? 2. Step-by-Step Journey
+
+### (1) Choose Path
+- Hero + InfoSection explains purpose.
+- Buttons: “Find Funding” ? 3a, “Generate Plan” ? 3b.
+- Persona cards: Frustrated, Newbie, Expert, Idea-Stage.
+
+### (3a) Funding Recommendation Engine
+- 3-step survey (Sector, Location, Stage).
+- One Q at a time, progress bar.
+- Results: ProgramCards with “Why we suggest this”.
+- Expert shortcut: enter program manually.
+
+### (3b) Plan Generator
+- Blocks: Vision, Market, Finance.
+- Inputs + optional uploads.
+- Tooltips with examples (expanded for Newbie).
+- “Did you know?” bubbles for Idea-stage.
+- Prefill defaults for Frustrated.
+- Advanced toggles for Expert.
+
+### (4) Funding Readiness
+- Checklist of completed sections.
+- Traffic light: Green/Orange/Red (advisory only).
+
+### (5) Preview + Pricing
+- Plan preview like Google Docs.
+- Completeness/complexity meters.
+- Auto-filled flagged.
+- Uploaded files list.
+- Pricing cards + upsells (Strategy, Review, Coaching).
+
+### (6) Pricing
+- Revolut-style cards, Standard vs Priority toggle.
+
+### (7) Checkout
+- Stripe checkout, email required.
+- Upload optional.
+- Priority toggle.
+
+### (8) Confirmation
+- On-site confirmation + email.
+- CTA: Request revision.
+
+### (9) After-Sales
+- Support form + coaching upsell.
+
+### (10) AI Plan Machine (Future)
+- “Coming soon” teaser.
+
+---
+
+## ?? 3. Subpages
+- Terms (/legal/terms) ? placeholder sections.
+- Privacy (/legal/privacy) ? GDPR-compliant placeholder.
+- GDPR (/legal/gdpr) ? “Your data is secure” placeholder.
+- Contact (/contact) ? form + placeholder info.
+- All linkable from Footer.
+
+---
+
+## ?? 4. Fallbacks & Edge Cases
+- Skipped inputs ? defaults + flagged in Preview.
+- No funding results ? “Add program manually”.
+- Readiness advisory only.
+- Checkout fail ? retry.
+- Email fail ? web confirmation shown.
+- Upload fail ? retry.
+- Offline mode ? save locally, sync later.
