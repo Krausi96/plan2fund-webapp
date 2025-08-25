@@ -1,0 +1,46 @@
+### User Journey Master (Synchronized)
+
+(0) Personas
+- Frustrated ? Quick Start (/results)
+- Newbie ? Guided (/plan)
+- Expert ? Skip to Editor (/plan)
+- Idea-Stage ? Lightweight (/funding)
+
+(1) Landing Page
+- NavBar (sticky, links: /plan, /funding, /pricing, /legal)
+- Hero (headline, CTAs: /plan, /funding, personas)
+- InfoSection (Apple-style intro text)
+- UseCases (persona cards)
+- ProductGrid (ProductCard: Reco Engine, Plan Generator, AI Machine)
+- Steps (How it Works)
+- NumbersSection (advantages + globe)
+- Footer (Legal, Contact, Pricing, Resources)
+
+(2) Choose Path
+- Hero CTAs + persona shortcuts
+
+(3a) Funding Engine
+- RecoPage (form: idea, sector, location)
+- ProgramCard (ranked list + reasoning)
+
+(3b) Plan Generator
+- PlanPage (blocks: Vision, Market, Finance)
+- Persona-driven defaults/tooltips/expert toggle
+
+(4) Eligibility Check
+- Checklist + visual meter
+
+(5) Preview Page
+- PreviewPage (PDF-like preview, share/download)
+
+(6) Pricing
+- Pricing (Revolut-style)
+
+(7) Checkout
+- Checkout (Stripe, persona modes)
+
+(8) Confirmation
+- Summary + resources
+
+(9) After-Sales
+- Support + upsell
