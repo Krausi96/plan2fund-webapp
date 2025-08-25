@@ -1,24 +1,18 @@
-export default function NavBar({ onNav, step }) {
-  const Crumb = ({ id, label }) => (
-    <button
-      onClick={() => onNav && onNav(id)}
-      style={{ padding:"8px 12px", border:"1px solid #e5e7eb", background:"#fff", borderRadius:10, cursor:"pointer", fontWeight:700, fontSize:13, opacity:step===id?1:0.75 }}
-      aria-current={step === id ? "page" : undefined}
-    >{label}</button>
-  );
+import React from "react";
+
+function NavBar() {
   return (
-    <header style={{display:"flex", alignItems:"center", justifyContent:"space-between", gap:12, margin:"10px 0 14px"}}>
-      <div style={{display:"flex", alignItems:"center", gap:10}}>
-        <div style={{width:28, height:28, borderRadius:8, background:"#eef2ff", border:"1px solid #e5e7eb", display:"grid", placeItems:"center", fontWeight:800, color:"#4338ca"}}>PF</div>
-        <div style={{fontWeight:800}}>Plan2Fund</div>
+    <nav className="sticky top-0 bg-gray-900/80 backdrop-blur border-b border-gray-800 text-white px-6 py-4 flex justify-between items-center z-50">
+      <a href="/" className="text-xl font-bold">Plan2Fund</a>
+      <div className="flex gap-6 text-sm font-medium">
+        <a href="/plan" className="hover:text-blue-400">Generate Plan</a>
+        <a href="/funding" className="hover:text-blue-400">Find Funding</a>
+        <a href="/pricing" className="hover:text-blue-400">Pricing</a>
+        <a href="/examples" className="hover:text-blue-400">Examples</a>
+        <a href="/legal" className="hover:text-blue-400">Legal</a>
       </div>
-      <nav aria-label="breadcrumbs" style={{display:"flex", alignItems:"center", gap:8}}>
-        <Crumb id="reco" label="Find funding" />
-        <span style={{opacity:0.4}}>/</span>
-        <Crumb id="plan" label="Business plan" />
-        <span style={{opacity:0.4}}>/</span>
-        <Crumb id="results" label="Results" />
-      </nav>
-    </header>
+    </nav>
   );
 }
+
+export default NavBar;

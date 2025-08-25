@@ -1,4 +1,5 @@
 import React from "react";
+import NavBar from "../components/NavBar";
 import Hero from "../components/Hero";
 import InfoSection from "../components/InfoSection";
 import ProductCard from "../components/ProductCard";
@@ -7,10 +8,12 @@ import Footer from "../components/Footer";
 function LandingPage() {
   return (
     <div className="bg-gray-900 text-white min-h-screen flex flex-col">
+      <NavBar />
       <Hero />
       <InfoSection />
-      <section className="py-16 px-6 bg-gray-950 border-t border-gray-800">
-        <h2 className="text-3xl font-bold text-center mb-10">Our Products</h2>
+
+      <section className="py-20 px-6 bg-gray-950 border-t border-gray-800">
+        <h2 className="text-3xl font-bold text-center mb-12">Our Products</h2>
         <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
           <ProductCard
             title="Recommendation Engine"
@@ -30,6 +33,7 @@ function LandingPage() {
           />
         </div>
       </section>
+
       <Footer />
     </div>
   );
