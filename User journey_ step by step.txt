@@ -1,0 +1,147 @@
+0) Additional Information (Guidelines): 
+ - Personas (Lense from a different viewpoint:
+   - Frustrated persona: minimum inputs, system fills defaults. (wants to Upload everything and wants to answer as less as possible)
+   - Newbie: Has a company or idea and does is not a business person, know how to answer simple questions but
+   - Expert persona: provides exact program, only wants refined plan.
+   - Idea-stage persona: no program, just an idea → guided into full modell.
+    
+ General Information: 
+- Header (from left to right but should fill width of website): Logo (note: Shhould be clickable and let user return to homepage) - Personal - Organisations - Build your  Freedom - Change language dropdown (DE/EN/ES/FR)
+- Body in blocks (like apple, stripe or revolut) - Color and font adjusted blocks. Include animations, hovering, moving if suitable. 
+- Footer (from left to right but should fill width of website): Contact - Terms & Conditions - Data Privacy - Legal Notice - ©2025 Plan2Fund. All rights reserved.
+- Navigation: User must alway be able to go back - Navigation bar (breadcrumbs, starting from 3b) 
+
+Step by Step (Pages):
+1)  Welcome Page:
+   - Modern UI inspired by Apple/Revolut/Stripe (blue tones, clean buttons, animations). 
+	- 1. Block Animation: Flying business objects, smoothly
+   - Components: GDPR, Terms and conditions, Impressum, Contact, Pricing, Real life examples
+   - Navigation bar that lets user go back and forth - adjust to UI
+   - Clear CTAs: “Find Funding” or “Generate Business Plan” After products).
+   - Trust-building: short taglines, logos, smooth scrolling.
+   - Works equally for impatient and expert personas.(IMPORTANT: User can be Organisation or Persona)
+   - Content: 
+
+1. (Hero):📍 Freedom starts with a clear plan — let’s build yours. (Animation of business plan objects in the background)
+
+2.Block: 
+Whether you're shaping an idea, applying for funding or preparing a visa — we turn your thoughts, drafts or existing business into a submission & funding-ready Business Plan.
+
+Built to meet standards of institutions, banks & public funding programs nationally & internationally.
+
+3.Block: 🧾 Use Cases
+From solo founders to consultants, our plans are used for:
+🗂 Visa Applications – e.g. RWR, Freelance Permit
+🧬 Grants & Public Funding – e.g. AWS PreSeed, FFG - Basisprogramm, EU startup calls
+📊 Bank Loans or Leasing – Structured + formatted to meet financial standards
+👥 Startup, Coaching or Projects – Early-stage ideas, Self-employment (e.g. AMS, WKO) or Projects supported by consultants and coaches
+
+4. Block. 
+ 📘 Custom Business Plan (15–35 pages)
+    You defined your business model - vision, offer, market, target group, marketing, financials. We turn your input into a full, submission-ready plan aligned with institutional & funding requirements.
+    → Ideal for: Visa, grant or loan/leasing Applications when your business model is clear.
+
+    🔍 Upgrade & Review
+    Already have a business plan, some parts or a draft? We’ll revise and upgrade it to pass — including formatting, rewriting, and expert edits for AWS, FFG, banks or visa programs.
+    → Ideal for: Plans that need add-ons (e.g. financials), structure and formatting.
+
+    🧩 Strategy & Modelling Plan (4–8 pages)*
+    You have a business idea but haven’t fully defined the details — like your target group, pricing, and positioning. We help you shape your business model and strategy, so you can move confidently into development or planning.
+    → Ideal for: Early-stage ideas, pivots, or consulting clients needing a clear business model.
+    Can be combined with a Business Plan or Upgrade & Review.
+
+5. Block: 🧾 What’s Included
+✔ A structured, submission-ready business plan or document
+✔ Delivered as Google Doc or Word (PDF optional, editable for reuse)
+✔ Includes a 1-Page Executive Summary that resumes your plan
+✔ A Trust Agreement (NDA) signed by us (optional)
+✔ Includes 1 free revision if your plan needs some adjustments
+✔ Async: No calls or meetings required. Nevertheless, you can reach me
+
+(Subpage) 
+💶 Pricing
+Each plan is priced based on submission type and complexity. Here's what to expect:
+• Basic Submission Plan (AMS, WKO) → €500 – €850
+For short, form-based applications.
+• Custom Business Plan (Visa, Grant, Bank) → €1.300 – €2.500
+Full plan built from your business model — includes model, logic, targets, and funding structure.
+• Review or Upgrade → €800 – €1.300
+You already have a draft? We fix structure, content, update formatting & make it fundable.
+• Strategy & Modelling Plan → €1.000 – €2.000
+For early-stage ideas or pivots — includes target group, pricing, and business model. Ideal if your idea isn’t fully defined yet.
+• Full Plan + Strategy Combo → €2.000 – €5.000
+Complete Package for startups, EU calls or multi-phase funding.
+
+(Subpage)
+I'm a startup advisor based in Austria, with a background in business modelling, planning and funding. I’ve helped founders and teams secure grants, and bank loans — including FFG Basisprogramm, Wirtschaftagentur Wien.
+
+
+2) Choose Path (integrated in Welcome page):
+   - User selects between Recommendation Engine ("Find your funding source" (3a) or Generator / Editor (Upgrade & Review) / 🧩 Strategy & Modelling Plan Generator: (3b).
+   - Both paths reusable; fallback stubs if data missing.
+   - Information/ questons from 3a) can be transferred to 3b)
+
+3a) Recommendation Engine:
+   - Uses local curated corpus (AT/EU funding URLs, overlays).
+   - Outputs Top 5 programs ranked with score + reasons.
+   - Safer than pure prompt → avoids hallucinations.
+   - Exploration mode: user can add missing program manually → temp overlay.
+   - UI adjusted Web UI intake fields or Dropdowns based on conditional logic.
+   - Will be a survey, so there will be multiple qestion one after the other.
+ 	Progress bar of questions (user can go back and forth) - Questions "fly in" and "fly out"
+	After being done 3 colorful cards will show the top programs. User selects program - pop up - Animation of a rabbit hunting a carrot - "A few steps and you are ready to be funded" - Action button  continues to 3b)
+	
+
+3b) Business Plan Generator / Editor (Upgrade & Review) / 🧩 Strategy & Modelling Plan Generator:
+   - WKO structure as base template.
+   - If program chosen, apply overlay with requirements, guidelines, documents.
+   - Handles tables, graphs (financials, market size).
+   - Modular: user can type, upload, or accept recommendations for missing info.
+   - Additional founder requirements (summary, CVs, etc.) supported via text/prompt fields.
+   - Preview documents (Business Plan, Strategy Plan, Modeling Plan) without revealing too much.
+   - Shows price tier based on complexity + timeline option.
+   - If no answer, we propose to fill out the missing part/chapter, based on our expert knwoledge.
+   - UI adjusted Web UI intake fields or Dropdowns based on conditional logic. 
+   - Same logic than in 3b) Navigation bar based on Chapters.User can go back and forth on questions Questions appear with an educational component.
+
+4) Eligibility + Confidence:
+   - Runs automatically, badges on results, decision in export.
+   - Strict mode: blocks navigation if not eligible (with “Adjust Answers” CTA).
+   - Debug panel: decision, score, unmet keys.
+
+5) Preview + Pricing:
+   - Preview as Pop-Up - only show important parts and make it appealing.
+   - Ask for additional documents requieremets (project summmary, CV, special format)
+   - Completeness meter (green/orange/red).
+   - Complexity score (sections completed, financial depth, attachments).
+   - Displays price tiers (Standard/Priority).
+   - Timeline option offered.
+
+6) AI Plan Machine (future step):
+   - Trains on successful past business plans.
+   - Reuses patterns to create stronger drafts.
+   - Similar to “create a book with AI” companies.
+   - Deferred until corpus + MVP stable.
+
+7) Confirmation Page:
+   - After preview stage. Option to choose plans + Additonal documents (CV, Project summary etc.)
+   - Summary in Shopping Cart (Freedom Takeaway)
+
+8) Checkout:
+   - Stripe integration (Visa, Mastercard, AmEx, Klarna, PayPal).
+   - CHECKOUT_ENABLED=false by default (safe stub).
+   - Shows order summary + tier selection.
+   - Option of download or send by E-mail.
+   - User must input e-mail (optional)
+
+8) Export:
+   - Generates DOCX/PDF toggle via flags.
+   - Safe fallback ensures no export break.
+
+9) After-Sales:
+   - Confirmation page + “Request revision” stub form.
+   - Later: connect email provider for notifications + customer service.
+   - Revisions supported through Supabase or email workflows.
+
+
+
